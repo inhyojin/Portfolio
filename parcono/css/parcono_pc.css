@@ -2,7 +2,7 @@
 
 ::-webkit-scrollbar {width: 12px;}
 ::-webkit-scrollbar-track {background-color: #353E4B;}
-::-webkit-scrollbar-thumb {background-color: #f8f8f8;} -->
+::-webkit-scrollbar-thumb {background-color: #f8f8f8;} 
 
 html {
     font-family: 'pretendard','BlinkMacSystemFont', 'Apple SD Gothic Neo','helvetica','Malgun Gothic','맑은 고딕', sans-serif;
@@ -52,6 +52,10 @@ nav #gnb_m {display: none;}
 nav #gnb {
     display: flex;
     justify-content: center;
+}
+nav #gnb li:hover {
+    background-color: #fff;
+    color: var(--color-main);
 }
 nav #gnb li a {
     display: block;
@@ -177,24 +181,37 @@ header #control li img {
 }
 
 .about .txtbox {
+    background-color: var(--bg-about1);
     box-sizing: border-box;
     padding: 7.396vw 8.750vw;
 }
 .about h3 {
+    color: var(--color-h3);
     letter-spacing: 3.74px;
     font-size: 1.042vw;
     font-weight: 700;
 }
 .about li h2.tit {
+    color: var(--color-sub);
     text-align: left;
     font-size: 2.604vw;
     margin: 0.365vw 0 1.927vw;
     letter-spacing: 3.75px;
 }
+.about li:nth-child(2) .btn {
+    background-color: var(--color-sub);
+}
+.about li:nth-child(4) .btn {
+    background-color: var(--color-main);
+}
+.about li:nth-child(4) {
+    background-color: var(--bg-about2);
+}
+.about li:nth-child(4) h2.tit {
+    color: var(--color-main);
+}
 .about p {
     font-weight: 400;
-    color: #555;
-    opacity: .9;
     margin-bottom: 4.167vw;
 }
 
@@ -246,7 +263,8 @@ header #control li img {
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #aaaaaa;
+    background-color: var(--color-grey);
+    opacity: .5;
     margin: 1.146vw 0 2.656vw;
 }
 #main_product #list li:first-child a::after {
@@ -281,7 +299,7 @@ header #control li img {
 /*** main_gallery ***/
 #main_gallery {
     overflow: hidden;
-    background-color: #efe8dd;
+    background-color: var(--bg-gallery);
     opacity: .8;
 }
 #main_gallery .gallery {
@@ -324,12 +342,12 @@ header #control li img {
     margin: 1.563vw 0 3.281vw;
     color: #fff;
     font-weight: 200;
-    opacity: .9;
 }
 #main_recruit p span {
     display: block;
 }
 #main_recruit a.btn {
+    background-color: var(--color-main);
     font-family: 'leferi', sans-serif;
     margin: 0 auto;
 }
@@ -348,16 +366,16 @@ header #control li img {
 table {
     margin: 4.688vw 0 1.563vw;
     width: 100%;
-    border-top: 1px solid #cdcbbe;
-    border-bottom: 1px solid #cdcbbe;
+    border-top: 1px solid var(--border-table);
+    border-bottom: 1px solid var(--border-table);
 }
 tr {
-    border-bottom: 1px solid #cdcbbe;
+    border-bottom: 1px solid var(--border-table);
 }
 th {
     font-weight: 500;
     width: 20.313vw;
-    background-color: #faf9f4;
+    background-color: var(--bg-table);
 }
 td > * {
     margin: 0.885vw;
@@ -370,14 +388,14 @@ tr:last-child input {border: none;}
 
 
 input, textarea {
-    color: #555;
+    color: var(--color-grey);
     letter-spacing: -0.44px;
     font-size: 1.146vw;
     height: 2.604vw;
     margin-left: 0.585vw;
     font-family: 'pretendard';
     font-weight: 500;
-    border:1px solid #bfbdae;
+    border:1px solid var(--border-table);
     text-indent: 5px;
 }
 input:focus, textarea:focus {
@@ -392,11 +410,12 @@ input:focus, textarea:focus {
 }
 #main_contact button[type="submit"] {
     margin-right: 0.729vw;
+    background-color: var(--color-main);
 }
 #main_contact button[type="reset"] {
     background-color: transparent;
-    color: #353e4b;
-    border: 1px solid  #353e4b;
+    color: var(--color-main);
+    border: 1px solid var(--color-main);
     box-sizing: border-box;
 }
 
@@ -501,8 +520,24 @@ footer .btn {
     color: #2b2b2b;
 }
 
+/* color */
+:root {
+    --bg-about1:  #FAF9F5;
+    --bg-about2:  #F6FAFF;
+    --bg-gallery: #efe8dd;
+    --bg-contact: #faf9f8;
+    --bg-table: #faf9f4;
 
-/* font common */
+    --color-h3:#cabe89;
+
+    --color-main:#353e4b;
+    --color-sub:#64543f;
+    --color-grey: #707070;
+
+    --border-table:#bfbdae;
+}
+
+/* font */
 h1, h2, h3, h4, h5 {
     font-family: 'leferi', sans-serif;
     text-transform: uppercase;
@@ -530,7 +565,6 @@ h5.con_tit2 {
 }
 .con_txt, tr {
     font-weight: 400;
-    color: #555;
     letter-spacing: -0.44px;
     font-size: 1.146vw;
     line-height: 1.927vw;
@@ -548,14 +582,3 @@ h5.con_tit2 {
     color: #fff;
     text-align: center;
 }
-
-/* color */
-.bg_bw {background-color: #FAF9F5;}
-.bg_bl {background-color: #F6FAFF;}
-
-.bw {color: #4B4135;}
-.bl {color: #353E4B;}
-.gld {color: #CABE89;}
-
-.btn_bg_bw {background-color:#64543F;}
-.btn_bg_bl {background-color:#353E4B ;}
