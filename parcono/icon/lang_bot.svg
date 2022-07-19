@@ -1,0 +1,10 @@
+<svg id="nav_bot" xmlns="http://www.w3.org/2000/svg" width="7" height="4" viewBox="0 0 7 4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="다각형_1" data-name="다각형 1" class="cls-1" d="M3.5,0,7,4H0Z" transform="translate(7 4) rotate(180)"/>
+</svg>
