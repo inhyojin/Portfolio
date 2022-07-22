@@ -37,6 +37,8 @@ nav h1 img {
     min-width: 127px;
     vertical-align: middle;
 }
+
+
 /* toggle menu*/
 nav #gnb_m {
     width: 22px;
@@ -47,13 +49,19 @@ nav #gnb_m img {
 }
 nav #gnb {
     position: absolute;
-    display: none;
-    width: 100%;
-    top: 128px; left: 0;
+    width: 100%; height: 0;
+    overflow: hidden;
+    top: 16.410vw; right: 0;
     font-family: 'leferi';
     font-weight: 500;
     letter-spacing: 0.05rem;
+    background-color: rgba(53, 62, 75, 0.95);
+    transition: .3s;
 }
+nav #gnb.active {
+    height: 82.05vw;
+}
+
 nav #gnb li:last-child {
     margin-right: 0;
 }

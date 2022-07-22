@@ -15,7 +15,6 @@
     <!-- pc -->
     <link rel="stylesheet" media="(min-width:678px) and (max-width:1920px)" href="./css/parcono_pc.css">
     
-    
     <!-- kakao map -->
     <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7cfad937933a902dc67deabe575d9be9"></script>
 </head>
@@ -27,7 +26,7 @@
         <!-- logo -->
         <h1><a href="#"><img src="./images/logo_w.svg" alt="로고"></a></h1>
         <!-- toggle menu icon -->
-        <a id="gnb_m" href="#"><img src="./icon/m_nav_menu.svg" alt=""></a>
+        <a id="gnb_m" href="#" class="active"><img src="./icon/m_nav_menu.svg" alt=""></a>
         <!-- gnb -->
         <ul id="gnb">
             <li><a href="#">about</a></li>
@@ -263,5 +262,7 @@
     });
     infowindow.open(map, marker); 
         </script>
+    <!-- js -->
+    <script type="text/javascript" src="./js/toggle.js"></script>
 </body>
 </html>
