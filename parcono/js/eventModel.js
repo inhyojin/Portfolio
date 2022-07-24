@@ -1,5 +1,12 @@
-const label = document.querySelectorAll('label');
-const txtBox = document.querySelectorAll('input');
+const inputs = document.querySelectorAll('input');
+const labels = document.querySelectorAll('label');
 
-txtBox.addEventListener('keyup',() => label.style.color = '#cabe89');
-txtBox.addEventListener('blur', () => label.style.color = '#353e4b')
+inputs.forEach(input => {
+    const index = input.dataset["index"];
+    input.addEventListener('keyup', () => {
+        labels[index].style.color = '#cabe89';
+    } );
+    input.addEventListener('blur', () => {
+        labels[index].style.color = '#353e4b';
+    })
+});
