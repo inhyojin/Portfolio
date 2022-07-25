@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* font */
+header .title h2 {
+    font-size: 32px;
+    letter-spacing: 5.2px;
+    font-weight: 500;
+    margin: 0;
+}
+header .title p.con_txt {
+    text-align: center;
+    font-weight: 200;
+    margin: 2.198vw auto 0;
+    width: 420px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'leferi', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+h2.tit {
+    font-size: 32px;
+    text-align: center;
+    margin: 7.813vw 0 4.375vw;
+}
+h3.subtit {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+h4.con_tit {
+    font-size: 32px;
+    letter-spacing: 0.58px;
+}
+h5.con_tit2 {
+    font-family: 'pretendard', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1.16px;
+    text-transform: uppercase;
+}
+.con_txt, tr {
+    font-weight: 400;
+    letter-spacing: -0.44px;
+    font-size: 16px;
+    line-height: 1.6;
+}

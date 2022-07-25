@@ -94,11 +94,18 @@ nav #util #lang:hover ul {
 
 /******* header *******/
 header {
-    height: 52.552vw;
-    background: url(../images/mainSlide_1.png) no-repeat 0 / cover;
+    height: 48.55vw;
     color: #fff;
     text-transform: uppercase;
     position: relative;
+    overflow: hidden;
+}
+header .imgbox {
+    height: 48.55vw;
+}
+header .imgbox img {
+    object-fit: none;
+    object-position: center center;
 }
 header .title {
     width: 100%;
@@ -107,7 +114,7 @@ header .title {
     transform: translate(-50%, -45%);
 }
 header .title h2 {
-    font-size: 2.404vw;
+    font-size: 46px;
     letter-spacing: 5.2px;
     font-weight: 500;
     margin: 0;
@@ -116,10 +123,10 @@ header .title p.con_txt {
     text-align: center;
     font-weight: 200;
     margin: 2.198vw auto 0;
-    width: 380px;
+    width: 420px;
     color: #fff;
-    font-size: 1vw;
-    line-height: 1.8vw;
+    font-size: 20px;
+    line-height: 1.8;
     letter-spacing: 0.3px;
 }
 header #control {
@@ -171,7 +178,7 @@ header #control li img {
 }
 .about li {
     width: 50%;
-    height: 39.063vw;
+
 }
 .about li:nth-child(3) {
     order: 4;
@@ -308,7 +315,7 @@ header #control li img {
 #main_gallery figure {
     margin-right: 5.208vw;
     width: 34.896vw;
-    height: 33.438vw;
+    height: 39.438vw;
 }
 #main_gallery figure:last-child {
     margin-right: 0;
@@ -544,30 +551,30 @@ h1, h2, h3, h4, h5 {
     font-weight: 700;
 }
 h2.tit {
-    font-size: 2.604vw;
+    font-size: 46px;
     text-align: center;
     margin: 7.813vw 0 4.375vw;
 }
 h3.subtit {
-    font-size: 1.042vw;
+    font-size: 20px;
     letter-spacing: 1.5px;
 }
 h4.con_tit {
-    font-size: 2.604vw;
+    font-size: 46px;
     letter-spacing: 0.58px;
 }
 h5.con_tit2 {
     font-family: 'pretendard', sans-serif;
     font-weight: 600;
-    font-size: 1.510vw;
+    font-size: 30px;
     letter-spacing: 1.16px;
     text-transform: uppercase;
 }
 .con_txt, tr {
     font-weight: 400;
     letter-spacing: -0.44px;
-    font-size: 1.146vw;
-    line-height: 1.927vw;
+    font-size: 22px;
+    line-height: 1.8;
 }
 
 /* btn */
