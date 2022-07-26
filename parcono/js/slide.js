@@ -9,16 +9,17 @@ nextBtn.addEventListener('click', () => {
     img[nextImg].style.display = 'block';
     currentImg = nextImg;
 });
+
 prevBtn.addEventListener('click', () => {
-    let previmg = currentImg-1;
-    if (previmg == -1) {
-        previmg = 2;
-        img[currentImg].style.display = 'none';
-        img[previmg].style.display = 'block';
-        currentImg = previmg
+    let prevImg = currentImg-1;
+    if (prevImg == -1) {
+        prevImg = 2;
+        img[currentImg].style.width = 'none';
+        img[prevImg].style.display = 'block';
+        currentImg = prevImg;
     } else {
         img[currentImg].style.display = 'none';
-        img[previmg].style.display = 'block';
-        currentImg = previmg
+        img[prevImg].style.display = 'block';
+        currentImg = prevImg;
     }
 });

@@ -250,7 +250,8 @@ header #control li img {
 }
 /*** main_product ***/
 #main_product {
-    overflow: hidden;
+    height:76.354vw;
+    position: relative;
 }
 #main_product #list {
     display: flex;
@@ -261,11 +262,12 @@ header #control li img {
 }
 #main_product #list li {
     width: 7.656vw;
+    cursor: pointer;
 }
-#main_product #list li a {
-    display: block;
+#main_product #list li.activeFont {
+    font-weight: 700;
 }
-#main_product #list li a::after {
+#main_product #list li::after {
     content: '';
     display: block;
     width: 100%;
@@ -274,26 +276,32 @@ header #control li img {
     opacity: .5;
     margin: 1.146vw 0 2.656vw;
 }
-#main_product #list li:first-child a::after {
-    background-color: #000;
-}
-#main_product #product {
-    display: flex;
+
+#main_product .product {
+    position: absolute;
+    top: 15.85vw; left: 0; right: 0;
+    margin: auto;
+    width: 84.88vw;
+    display: none;
     flex-wrap: wrap;
-    justify-content: center;
 }
-#main_product #product li {
+#main_product .product.active {
+    display: flex;
+}
+#main_product .product li {
     width: 20.156vw;
     height: 19.635vw;
     margin: 0 1.406vw 1.806vw 0;
 }
-#main_product #product li a {
-    display: block;
+#main_product .product li:nth-child(4),
+#main_product .product li:nth-child(8) {
+    margin-right: 0;
 }
 #main_product a.viewmore {
-    align-items: center;
     color: #424953;
-    display: flex;
+    position: absolute;
+    bottom: 2vw; left: 50%;
+    transform: translateX(-50%);
     margin: 5.052vw auto 8.177vw;
     width: 8.802vw;
     font-size: 1.042vw;
