@@ -362,9 +362,11 @@ header #control li img {
     display: block;
 }
 #main_recruit a.btn {
+    box-sizing: border-box;
     background-color: var(--color-main);
     font-family: 'leferi', sans-serif;
     margin: 0 auto;
+    transition: .2s;
 }
 /*** main_contact ***/
 #main_contact h2 {
@@ -421,6 +423,7 @@ input:focus, textarea:focus {
     display: flex;
 }
 #main_contact .btn {
+    transition: .2s;
     border: none;
 }
 #main_contact button[type="submit"] {
@@ -534,6 +537,9 @@ footer .btn {
     background-color: #fff;
     color: #2b2b2b;
 }
+footer .btn:hover {
+    font-weight: 700;
+}
 
 /* color */
 :root {
@@ -596,4 +602,17 @@ h5.con_tit2 {
     height: 4.167vw; line-height: 4.167vw;
     color: #fff;
     text-align: center;
+    cursor: pointer;
+}
+
+main #main_about .btn:hover,
+main #main_recruit .btn:hover,
+main #main_contact .btn:hover {
+    background-color: hsl(217, 21%, 16%);
+}
+main #main_about li:nth-child(2) .btn:hover {
+    background-color: hsl(34, 23%, 18%);
+}
+main #main_contact .button button[type=reset]:hover {
+    background-color: #fff;
 }

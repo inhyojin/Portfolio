@@ -187,11 +187,6 @@ header #control li:last-child {
 .about li:nth-child(4) h2.tit {
     color: var(--color-main);
 }
-.about li .btn:hover {
-    background-color: #fff;
-    border: 1px solid var(--color-main);
-    color: var(--color-main);
-}
 
 /*** main_menu ***/
 #main_menu {
@@ -249,19 +244,24 @@ header #control li:last-child {
 #main_product #list li:nth-child(4) ~ li {
     display: none;
 }
-
-#main_product #product {
+#main_product {
+    height: 236vw;
+    position: relative;
+}
+#main_product .product {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 6vw;
     box-sizing: border-box;
+    position: absolute;
+    top: 32vw;
 }
-#main_product #product li {
+#main_product .product li {
     width: 48%;
     margin-bottom: 3vw;
 }
-#main_product #product li a {
+#main_product .product li a {
     width: 100%;
 }
 
@@ -273,6 +273,8 @@ header #control li:last-child {
     width: 100%;
     display: block;
     text-align: center;
+    position: absolute;
+    bottom: 0;
 }
 #main_product a.viewmore img {
     width: 4.359vw;
