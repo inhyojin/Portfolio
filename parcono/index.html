@@ -57,11 +57,11 @@
     <!------- header ------->
     <header>
         <!-- carousel -->
-        <div class="imgbox">
-            <img src="./images/mainSlide_1.png" alt="" id="mainImg">
-            <img src="./images/mainSlide_2.png" alt="" id="mainImg">
-            <img src="./images/mainSlide_3.png" alt="" id="mainImg">
-        </div>
+        <ul class="slideWrapper">
+            <li class="slideItem img1 active">img1</li>
+            <li class="slideItem img2">img2</li>
+            <li class="slideItem img3">img3</li>
+        </ul>
         <!-- title -->
         <div class="title">
             <h2 class="tit">faithful to the essence</h2>
@@ -194,8 +194,8 @@
                 <figure>
                     <img src="./images/gallery_1.png" alt="">
                     <figcaption>
-                        <h5 class="con_tit2">원목가구, 아름답게 늙어가는 매력</h5>
-                        <p class="con_txt">스탠스 가구와 오래도록 함께하세요.</p>
+                        <h5 class="con_tit2">스탠스 원목에 대하여</h5>
+                        <p class="con_txt">고유의 결을 나타내고 내구성과 함수율이 월등한 목재만을 사용합니다.</p>
                     </figcaption>
                 </figure>
                 <figure>
@@ -208,8 +208,8 @@
                 <figure>
                     <img src="./images/gallery_3.png" alt="">
                     <figcaption>
-                        <h5 class="con_tit2">원목가구, 아름답게 늙어가는 매력</h5>
-                        <p class="con_txt">스탠스 가구와 오래도록 함께하세요.</p>
+                        <h5 class="con_tit2">가구를 향한 목수들의 애착</h5>
+                        <p class="con_txt">스탠스의 모든 제품은 자사 목수들이 직접 제작합니다.</p>
                     </figcaption>
                 </figure>
             </div>
@@ -230,33 +230,34 @@
             <h2 class="tit">contact us</h2>
             <p class="con_txt">주문 제작 및 커스텀 가구 문의를 남겨주시면 순차적으로 답변드리겠습니다.</p>
             <fieldset>
+                <form name="contact">
                 <table>
                     <tr>
                         <th><label for="name">성명</label></th>
-                        <td><input data-index="0" type="text" id="name" name="user_name"></td>
+                        <td><input data-index="0" type="text" name="user_name"></td>
                     </tr>
                     <tr>
                         <th><label for="tel">전화번호</label></th>
-                        <td><input data-index="1" type="tel" maxlength="3" id="tel" name="user_tel">-<input data-index="1" type="tel" maxlength="4" id="tel" name="user_tel">-<input data-index="1" type="tel" maxlength="4" id="tel" name="user_tel"></td>
+                        <td><input data-index="1" type="tel" maxlength="3" name="user_tel">-<input data-index="1" type="tel" maxlength="4" name="user_tel">-<input data-index="1" type="tel" maxlength="4" id="tel" name="user_tel"></td>
                     </tr>
                     <tr>
                         <th><label for="email">이메일</label></th>
-                        <td><input data-index="2" type="email" id="email" name="user_email"></td>
+                        <td><input data-index="2" type="email" name="user_email"></td>
                     </tr>
                     <tr>
                         <th><label for="txt">문의내용</label></th>
-                        <td><textarea data-index="3" id="txt" name="consult"></textarea></td>
+                        <td><textarea data-index="3" name="txt" placeholder="제품 및 견적 문의는 파일을 첨부해 주시면 보다 빠르고 정확한 답변에 도움이 됩니다." onfocus=""></textarea></td>
                     </tr>
                     <tr>
                         <th><label for="file">파일첨부</label></th>
-                        <td><input data-index="4" type="file" id="file"
+                        <td><input data-index="4" type="file"
                         accept=".jpg, .png, .pdf" name="add_file"></td>
                     </tr>
                 </table>
+                <p id="nan"></p>
                 <div class="button">
                     <button type="submit" id="submit" name="submit" class="btn">문의하기</button>
-                    <button type="reset" id="reset" name="reset" class="btn">취소</button>
-                </div>
+                </form>
             </fieldset>
         </article>
         <!-- main_location -->

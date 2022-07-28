@@ -1,25 +1,31 @@
-let img = document.querySelectorAll('#mainImg');
-let nextBtn = document.querySelector('#nextBtn');
-let prevBtn = document.querySelector('#prevBtn');
+const slideItems = document.querySelectorAll('.slideItem');
+const nextBtn = document.querySelector('#nextBtn');
+const prevBtn = document.querySelector('#prevBtn');
 
-let currentImg = 0;
-nextBtn.addEventListener('click', () => {
-    let nextImg = (currentImg+1) % 3;
-    img[currentImg].style.display = 'none';
-    img[nextImg].style.display = 'block';
-    currentImg = nextImg;
-});
+function autoSlide() {
+    let i = 0;
+    prevBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            slideItems[i].classList.remove('active');
+            i--;
+            if (i < 0) {
+                i = slideItems.length -1 ;
+            }
+            slideItems[i].classList.add('active');
+    });
+    nextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        slideItems[i].classList.remove('active');
+        i++;
+        if (i >= slideItems.length) {
+            i = 0
+        }
+        slideItems[i].classList.add('active');
+    });
+}
 
-prevBtn.addEventListener('click', () => {
-    let prevImg = currentImg-1;
-    if (prevImg == -1) {
-        prevImg = 2;
-        img[currentImg].style.width = 'none';
-        img[prevImg].style.display = 'block';
-        currentImg = prevImg;
-    } else {
-        img[currentImg].style.display = 'none';
-        img[prevImg].style.display = 'block';
-        currentImg = prevImg;
-    }
-});
+setInterval(function() {
+    nextBtn.click();
+}, 3000);
+
+autoSlide();
