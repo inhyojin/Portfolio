@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+:root {
+    font-size: 20px;
+}
+nav .toggle {
+    display: none;
+}
+nav .gnb {
+    position: static;
+    display: flex;
+    text-align: center;
+    height: 100%;
+    padding-left: 0;
+}
+nav .gnb a {
+    padding: 0 1.2vw;
+}
+
+header {
+    height: 1040px;
+}
+
+.shop li .img_holder {
+    overflow: hidden;
+}
+.shop img {
+    cursor: pointer;
+    transition: .6s;
+}
+.shop li:hover img{
+    transform: scale(1.05);
+    filter: brightness(.8);
+}
+
+.collect .img {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: .6s;
+}
+.collect .img2,
+.collect .img4 {border-radius: 30px;}
+.collect .img:hover::after {
+    bottom: -6%;
+}
+.collect .img:hover {
+    border-radius: 30px;
+}
+
+.collect .img::after {
+    content: '2021 AUTUMN COLLECTION 1';
+    color: #000;
+    display: block;
+    width: 100%;
+    height: 12%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    transition: .6s;
+    z-index: 99999;
+}
+.collect .img2::after {content: '2022 SPRING COLLECTION 1';}
+.collect .img3::after {content: '2022 SPRING COLLECTION 2';}
+.collect .img4::after {content: '2022 SUMMER COLLECTION 2';}
+.collect .img5::after {content: '2021 AUTUMN COLLECTION 2';}
+.collect .img6::after {content: '2022 SUMMER COLLECTION 1';}
+
+.recruit {
+    height: 600px;
+}
+.recruit a.btn {
+    margin-top: 80px;
+    width: 350px;
+    height: 100px; line-height: 100px;
+    transform: scale(.8);
+    transition: .6s;
+}
+.recruit a.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+.location {
+    position: relative;
+}
+.info {
+    z-index: 999999;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: absolute;
+    top: 200px; left: 40px;
+    text-align: left;
+    font-size: .8rem;
+    line-height: 1.6
+}

@@ -73,23 +73,23 @@
             </ul>
     </section>
     <section class="collect">
-        <h3 class="tit">VITAL SIGN COLLECTION</h3>
+        <h3 class="tit">Archive Collection</h3>
             <ul class="img_inner">
-                <li class="img img1">img1</li>
-                <li class="img img2">img2</li>
-                <li class="img img3">img3</li>
-                <li class="img img4">img4</li>
-                <li class="img img5">img5</li>
-                <li class="img img6">img6</li>
+                <li class="img img1"></li>
+                <li class="img img2"></li>
+                <li class="img img3"></li>
+                <li class="img img4"></li>
+                <li class="img img5"></li>
+                <li class="img img6"></li>
             </ul>
     </section>
     <section class="video">
-        <h3 class="tit">Vital Sign Your HEART And BRAIN</h3>
+        <h3 class="tit">Nostalgia For Florence</h3>
         <video src="./images/youtube.mp4" loop muted autoplay controls></video>
     </section>
     <section class="recruit">
         <div class="txtbox">
-            <h3 class="tit">Vital Sign Your HEART And BRAIN</h3>
+            <h3 class="tit">DESIGN YOUR GROWTH</h3>
             <p class="txt">We are looking for talented people to work 
                 with women's clothing, a vital sign 
                 representing sophisticated aesthetics.</p>
@@ -97,8 +97,9 @@
         </div>
     </section>
     <section class="location">
-        <h3 class="tit">location</h3>
+        <h3 class="tit">Location</h3>
         <div id="map"></div>
+        <div class="info"><strong class="txt">Address</strong> | <br>서울 동대문구 고산자로60길 19 1, 2층</div>
     </section>
     <footer></footer>
     <!-- kakao map -->
@@ -106,19 +107,19 @@
         <script>
             var container = document.getElementById('map'); 
             var options = {
-            center: new kakao.maps.LatLng(37.818835696168016, 126.76266112984092), 
-            level: 2 
+            center: new kakao.maps.LatLng(37.59066091666337, 127.03609665819782), 
+            level: 3
             };
             var map = new kakao.maps.Map(container, options); 
-            var markerPosition  = new kakao.maps.LatLng(37.81882480601536, 126.7628457225128); 
+            var markerPosition  = new kakao.maps.LatLng(37.59066091666337, 127.03609665819782); 
     
             var marker = new kakao.maps.Marker({
                 position: markerPosition
             });
             marker.setMap(map);
     
-            var iwContent = '<div style="padding:8px 15px; font-weight:bold;">PARCONO</div>', 
-        iwPosition = new kakao.maps.LatLng(37.81882480601536, 126.7628457225128); 
+            var iwContent = '<div style="padding:8px 15px; font-weight:bold; font-size:1rem;">VITAL-SIGN</div>', 
+        iwPosition = new kakao.maps.LatLng(37.59066091666337, 127.03609665819782); 
     
         var infowindow = new kakao.maps.InfoWindow({
             position : iwPosition, 

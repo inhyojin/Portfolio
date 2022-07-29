@@ -21,11 +21,11 @@ header .img3 {background-image: url(../images/main03_m.jpg);}*/
 
 .collect .img1 {background: url(../images/col01.jpg);}
 .collect .img2 {background: url(../images/col02.jpg); grid-row: span 2; height: 100%;}
-.collect .img3 {background: url(../images/col03.jpg); order: ;}
+.collect .img3 {background: url(../images/col03.jpg);}
 .collect .img4 {background: url(../images/col04.jpg); grid-row: span 2; height: 100%;}
 .collect .img5 {background: url(../images/col05.jpg);}
 .collect .img6 {background: url(../images/col06.jpg);}
 
 section.recruit {
-    background: url(../images/recruit.jpg) no-repeat 50%;
+    background: url(../images/recruit.jpg) no-repeat 50% / cover;
 }

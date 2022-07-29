@@ -36,6 +36,7 @@ section {
 
 /* nav */
 nav {
+    color: #fff;
     position: fixed;
     top: 0; left: 0;
     box-sizing: border-box;
@@ -61,13 +62,12 @@ nav .toggle img {
     width: 100%;
 }
 nav .gnb {
+    text-transform: uppercase;
     display: none;
     position: fixed;
     top: 55px; left: 0;
     padding-left: 20px;
-    width: 100%;
     height: 0;
-    background-color: aliceblue;
 }
 nav .gnb.active {
     height: 440px;
@@ -133,6 +133,10 @@ header h3 {
     width: 48%;
 }
 
+.shop li img {
+    width: 100%;
+    height: 100%;
+}
 .shop h4 {
     padding: 2.564vw 0;
 }
@@ -141,13 +145,12 @@ header h3 {
     margin: 0 auto;
     max-width: 1200px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 70.769vw);
     gap: 10px;
 }
 .collect li.img {
     background-position: 50%;
-    text-indent: -9999px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -160,13 +163,13 @@ header h3 {
 /* video */
 .video video {
     width: 100%;
-    background-color: aqua;
 }
 /* rucruit */
 .recruit {
     position: relative;
     color: #fff;
-    height: 460px;
+    width: 100%;
+    height: 48.813vw;
     background: url(../images/recruit_m.jpg) no-repeat 50% / cover;
 }
 .recruit::after {
@@ -179,7 +182,7 @@ header h3 {
 }
 .recruit .txtbox {
     width: 85%;
-    max-width: 580px;
+    max-width: 720px;
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
@@ -196,5 +199,5 @@ header h3 {
 
 #map {
     width: 100%;
-    height: 580px;
+    height: 30.208vw;
 }
