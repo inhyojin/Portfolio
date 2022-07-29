@@ -123,21 +123,22 @@ header h3 {
     margin-top: 5rem;
 }
 .shop ul {
+    margin: 0 auto;
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.shop .img_holder {
-    width: 44.359vw;
-    height: 56.923vw;
+.shop li {
+    width: 48%;
 }
+
 .shop h4 {
     padding: 2.564vw 0;
 }
 /* collection */
 .collect ul {
     margin: 0 auto;
-
     max-width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -157,7 +158,6 @@ header h3 {
 .collect .img5 {background: url(../images/col05_m.jpg);}
 .collect .img6 {background: url(../images/col06_m.jpg);}
 /* video */
-.video {}
 .video video {
     width: 100%;
     background-color: aqua;
@@ -189,7 +189,7 @@ header h3 {
     margin: 0 auto;
     display: block;
     border: 2px solid #fff;
-    width: 175px;
+    width: 250px;
     height: 50px; line-height: 50px;
     margin-top: 40px;
 }
