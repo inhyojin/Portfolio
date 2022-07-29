@@ -39,15 +39,15 @@ h4.con_tit {
 h5.con_tit2 {
     font-family: 'pretendard', sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 24px;
     letter-spacing: 1.16px;
     text-transform: uppercase;
 }
 .con_txt, tr {
     font-weight: 400;
     letter-spacing: -0.44px;
-    font-size: 14px;
-    line-height: 1.4;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 
@@ -55,10 +55,18 @@ h5.con_tit2 {
 
 
 /* gallery */
+.gallery {
+    padding-bottom: 100px;
+}
 .gallery figcaption {
     height: 10vw;
 }
 #main_gallery .gallery figcaption p.con_txt {
-    margin-top: 3vw;
+    margin-top: 2vw;
 }
 
+/* recruit */
+#main_recruit {
+    height: 26vw;
+    padding: 40px;
+}

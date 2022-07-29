@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+:root {
+    font-size: 15px;
+}
+
+header .slideItem {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+header .img1 {background-image: url(../images/main01.jpg);}
+/*
+header .img2 {background-image: url(../images/main02_m.jpg);}
+header .img3 {background-image: url(../images/main03_m.jpg);}*/
+.collect ul {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 30.769vw);
+    gap: 15px;
+}
+
+.collect .img1 {background: url(../images/col01.jpg);}
+.collect .img2 {background: url(../images/col02.jpg); grid-row: span 2; height: 100%;}
+.collect .img3 {background: url(../images/col03.jpg); order: ;}
+.collect .img4 {background: url(../images/col04.jpg); grid-row: span 2; height: 100%;}
+.collect .img5 {background: url(../images/col05.jpg);}
+.collect .img6 {background: url(../images/col06.jpg);}
+
+section.recruit {
+    background: url(../images/recruit.jpg) no-repeat 50%;
+}

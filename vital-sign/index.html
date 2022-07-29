@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>VITAL-SIGN</title>
+    <!-- minireset -->
+    <link rel="stylesheet" href="./css/minireset.css">
+    <!-- font -->
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="./css/fontello.css">
+    <!-- mediaQuery -->
+    <link rel="stylesheet" href="./css/vital_mobile.css">
+    <link rel="stylesheet" media="(min-width:768px)" href="./css/vital_tablet.css">
+    <link rel="stylesheet" media="(min-width:1440px)" href="./css/vital_pc.css">
+</head>
+<body>
+    <nav>
+        <!-- logo -->
+        <h1 class="logo">
+            <a href="#"><img src="./images/toplogo_w.png" alt=""></a>
+        </h1>
+        <!-- toggle -->
+        <div class="toggle"><img src="./icon/toggle.png" alt=""></div>
+        <!-- gnb -->
+        <ul class="gnb">
+            <li><a href="#">outer</a></li>
+            <li><a href="#">top</a></li>
+            <li><a href="#">bottom</a></li>
+            <li><a href="#">dress</a></li>
+            <li><a href="#">accessory</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">community</a></li>
+            <li><a href="#">membership</a></li>
+        </ul>
+    </nav>
+    <header>
+        <!-- carousel -->
+        <ul class="slideWrapper">
+            <li class="slideItem img1">img1</li>
+            <li class="slideItem img2">img2</li>
+            <li class="slideItem img3">img3</li>
+        </ul>
+        <div class="slideBtn"></div>
+        <div class="slideBtn"></div>
+        <div class="txtbox">
+            <h2 class="ban_tit">GREAMY
+                <span>BACKYARD GIRL!</span></h2>
+            <h3 class="tit">2022 Summer Line COLLECTION VOL 2</h3>
+        </div>
+    </header>
+    <section class="shop">
+        <h3 class="tit">Vital Sign Your HEART And BRAIN</h3>
+            <ul class="img_inner">
+                <li>
+                    <div class="img_holder"><img src="./images/shop01.jpg" alt="outer"></div>
+                    <h4 class="subtit">OUTER</h4>
+                </li>
+                <li>
+                    <div class="img_holder"><img src="./images/shop02.jpg" alt="TOP"></div>
+                    <h4 class="subtit">TOP</h4>
+                </li>
+                <li>
+                    <div class="img_holder"><img src="./images/shop03.jpg" alt="BOTTOM"></div>
+                    <h4 class="subtit">BOTTOM</h4>
+                </li>
+                <li>
+                    <div class="img_holder"><img src="./images/shop04.jpg" alt="DRESS"></div>
+                    <h4 class="subtit">DRESS</h4>
+                </li>
+            </ul>
+    </section>
+    <section class="collect">
+        <h3 class="tit">VITAL SIGN COLLECTION</h3>
+            <ul class="img_inner">
+                <li class="img img1">img1</li>
+                <li class="img img2">img2</li>
+                <li class="img img3">img3</li>
+                <li class="img img4">img4</li>
+                <li class="img img5">img5</li>
+                <li class="img img6">img6</li>
+            </ul>
+    </section>
+    <section class="video">
+        <h3 class="tit">Vital Sign Your HEART And BRAIN</h3>
+        <video src="./images/youtube.mp4" loop muted autoplay controls></video>
+    </section>
+    <section class="recruit">
+        <div class="txtbox">
+            <h3 class="tit">Vital Sign Your HEART And BRAIN</h3>
+            <p class="txt">We are looking for talented people to work 
+                with women's clothing, a vital sign 
+                representing sophisticated aesthetics.</p>
+            <a href="#" class="btn subtit">VIEW MORE</a>
+        </div>
+    </section>
+    <section class="location">
+        <h3 class="tit">location</h3>
+        <div id="map"></div>
+    </section>
+    <footer></footer>
+    <!-- kakao map -->
+        <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7cfad937933a902dc67deabe575d9be9"></script>
+        <script>
+            var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+            var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(37.818835696168016, 126.76266112984092), //지도의 중심좌표.
+            level: 2 //지도의 레벨(확대, 축소 정도)
+            };
+    
+            var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+    
+            // 마커가 표시될 위치입니다 
+            var markerPosition  = new kakao.maps.LatLng(37.81882480601536, 126.7628457225128); 
+    
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+                position: markerPosition
+            });
+            marker.setMap(map);
+    
+            //인포윈도우 표시 위치입니다
+            var iwContent = '<div style="padding:8px 15px; font-weight:bold;">PARCONO</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+        iwPosition = new kakao.maps.LatLng(37.81882480601536, 126.7628457225128); 
+    
+        // 인포윈도우를 생성합니다
+        var infowindow = new kakao.maps.InfoWindow({
+            position : iwPosition, 
+            content : iwContent 
+        });
+        infowindow.open(map, marker); 
+        </script>
+</body>
+</html>

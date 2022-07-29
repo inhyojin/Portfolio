@@ -336,14 +336,13 @@ header #control li img {
 #main_gallery figure {
     margin-right: 5.208vw;
     width: 34.896vw;
-    height: 39.438vw;
+    height: 41.438vw;
 }
 #main_gallery figure:last-child {
     margin-right: 0;
 }
 #main_gallery figcaption {
-    height: 10vw;
-    font-size: 1.771vw;
+    height: 180px;
     padding: 1.9vw;
     box-sizing: border-box;
     background-color: #fff;
@@ -594,14 +593,14 @@ h4.con_tit {
 h5.con_tit2 {
     font-family: 'pretendard', sans-serif;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 28px;
     letter-spacing: 1.16px;
     text-transform: uppercase;
 }
 .con_txt, tr {
     font-weight: 400;
     letter-spacing: -0.44px;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.8;
 }
 

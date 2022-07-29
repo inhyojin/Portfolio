@@ -1,3 +1,6 @@
+
+
+
 const lis = document.querySelectorAll('#main_product #list li');
 const prds = document.querySelectorAll('#main_product .product');
 
