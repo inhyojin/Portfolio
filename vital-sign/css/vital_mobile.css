@@ -169,7 +169,7 @@ header h3 {
     position: relative;
     color: #fff;
     width: 100%;
-    height: 48.813vw;
+    height: 75.208vw;
     background: url(../images/recruit_m.jpg) no-repeat 50% / cover;
 }
 .recruit::after {
@@ -199,5 +199,35 @@ header h3 {
 
 #map {
     width: 100%;
-    height: 30.208vw;
+    height: 75.208vw;
+    background-color: aliceblue;
+}
+.location {
+    position: relative;
+}
+.info {
+    z-index: 999999;
+    width: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:mediumaquamarine;
+    position: absolute;
+    top: 100px; left: 20px;
+    text-align: left;
+    font-size: .8rem;
+    line-height: 1.6
+}
+footer {
+    width: 100%;
+    padding-bottom: 50px;
+}
+footer .btn {
+    display: block;
+    text-align: center;
+    margin: 0 auto;    
+    width: 250px;
+    height: 70px; line-height: 70px;
+    background-color: #000;
+    color: #fff;
+    
 }
