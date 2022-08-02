@@ -17,18 +17,17 @@ const menus = document.querySelectorAll('.gnb li');
 
 toggle.addEventListener('click', (e) => {
     e.preventDefault();
-    nav.classList.add('style');
-    e.currentTarget.classList.add('active_toggle');
-    gnb.classList.add('active_menu');
-
-    // 메뉴 클릭 시 창 닫힘
-    menus.forEach(menu => {
-        menu.addEventListener('click', (e) => {
-            e.preventDefault();
-            toggle.classList.remove('active_toggle');
-            gnb.classList.remove('active_menu');
-            nav.classList.remove('style');
-        });
+    nav.classList.toggle('style');
+    e.currentTarget.classList.toggle('active_toggle');
+    gnb.classList.toggle('active_menu');
+});
+// 메뉴 클릭 시 창 닫힘
+menus.forEach(menu => {
+    menu.addEventListener('click', (e) => {
+        e.preventDefault();
+        toggle.classList.remove('active_toggle');
+        gnb.classList.remove('active_menu');
+        nav.classList.remove('style');
     });
 });
 
