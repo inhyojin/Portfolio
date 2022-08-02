@@ -3,7 +3,7 @@ const section = document.querySelector('section');
 
 // 메뉴 스크롤 이벤트
 addEventListener('scroll', (e) => {
-    if (scrollY > section.offsetTop) {
+    if (scrollY > section.offsetTop || gnb.classList.contains('active_menu')) {
         nav.classList.add('style');
     } else {
         nav.classList.remove('style');
