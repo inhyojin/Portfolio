@@ -19,6 +19,7 @@ nav .toggle {
     display: none;
 }
 nav .gnb {
+    opacity: 1;
     transition: none;
     position: static;
     height: 55px;
@@ -27,16 +28,6 @@ nav .gnb {
 }
 nav .gnb a {
     padding: 0 20px;
-}
-
-nav.style {
-    background-color: #fff;
-}
-nav.style li {
-    color: #000;
-}
-nav.style img {
-    filter: brightness(0);
 }
 
 header {

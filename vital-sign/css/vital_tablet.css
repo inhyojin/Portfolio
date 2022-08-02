@@ -3,7 +3,9 @@
 :root {
     font-size: 15px;
 }
-
+nav .gnb {
+    transition: none;
+}
 header .slideItem {
     background-repeat: no-repeat;
     background-size: cover;
