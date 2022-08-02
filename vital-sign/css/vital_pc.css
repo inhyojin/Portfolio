@@ -15,24 +15,20 @@
     background-color:hsl(30, 28%, 90%);
     transition: .3s;
 }
-nav {
-    transition: .4s;
-}
 nav .toggle {
     display: none;
 }
 nav .gnb {
-    z-index: 9999;
-    width: 68%;
+    transition: none;
     position: static;
-    display: flex;
-    text-align: center;
-    height: 100%;
-    padding-left: 0;
+    height: 55px;
+    flex-flow: row;
+    
 }
 nav .gnb a {
-    padding: 0 1.2vw;
+    padding: 0 20px;
 }
+
 nav.style {
     background-color: #fff;
 }
