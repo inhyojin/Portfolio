@@ -11,10 +11,15 @@
     <link rel="stylesheet" href="./css/font.css">
     <!-- icon -->
     <link rel="stylesheet" href="./css/fontello.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <!-- mediaQuery -->
     <link rel="stylesheet" href="./css/vital_mobile.css">
     <link rel="stylesheet" media="(min-width:768px)" href="./css/vital_tablet.css">
     <link rel="stylesheet" media="(min-width:1440px)" href="./css/vital_pc.css">
+    <!-- swiper js -->
+    <script defer src="./js/swiper-bundle.min.js"></script>
+    <script defer src="./js/swiper.js"></script>
 </head>
 <body>
     <!-- goTo -->
@@ -45,14 +50,17 @@
         </div>
     </nav>
     <header>
-        <!-- carousel -->
-        <ul class="slideWrapper">
-            <li class="slideItem img1">img1</li>
-            <li class="slideItem img2">img2</li>
-            <li class="slideItem img3">img3</li>
-        </ul>
-        <div class="slideBtn"></div>
-        <div class="slideBtn"></div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper slideWrapper">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide slideItem img1">Slide 1</li>
+                <li class="swiper-slide slideItem img2">Slide 2</li>
+                <li class="swiper-slide slideItem img3">Slide 3</li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
         <div class="txtbox">
             <h2 class="ban_tit">GREAMY
                 <span>BACKYARD GIRL!</span></h2>
@@ -118,7 +126,7 @@
             center: new kakao.maps.LatLng(37.59066091666337, 127.03609665819782), 
             level: 3
             };
-            var map = new kakao.maps.Map(container, options); 
+            var map = new kakao.maps.Map(container, options);
             var markerPosition  = new kakao.maps.LatLng(37.59066091666337, 127.03609665819782); 
     
             var marker = new kakao.maps.Marker({

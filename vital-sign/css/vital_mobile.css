@@ -138,12 +138,18 @@ header {
     height: 675px;
     position: relative;
 }
+header .swiper {
+    --swiper-theme-color: #fff
+}
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+    font-size: var(--font-tit);
+}
+
 header .slideWrapper {
     height: 100%;
 }
 header .slideItem {
-    position: absolute;
-    top: 0; left: 0;
     width: 100%;
     height: 100%;
     text-indent: -9999px;
@@ -151,17 +157,17 @@ header .slideItem {
     background-size: cover;
 }
 header .img1 {background-image: url(../images/main01_m.jpg);}
-/*
 header .img2 {background-image: url(../images/main02_m.jpg);}
-header .img3 {background-image: url(../images/main03_m.jpg);}*/
+header .img3 {background-image: url(../images/main03_m.jpg);}
 
 header .txtbox {
     text-align: center;
-    width: 95%;
+    width: 70%;
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+    z-index: 99;
 }
 header h2 {
     font-size: var(--font-ban-tit);

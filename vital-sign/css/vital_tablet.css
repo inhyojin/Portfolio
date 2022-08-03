@@ -12,9 +12,9 @@ header .slideItem {
     background-position: 50%;
 }
 header .img1 {background-image: url(../images/main01.jpg);}
-/*
-header .img2 {background-image: url(../images/main02_m.jpg);}
-header .img3 {background-image: url(../images/main03_m.jpg);}*/
+header .img2 {background-image: url(../images/main02.jpg);}
+header .img3 {background-image: url(../images/main03.jpg);}
+
 .collect ul {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 30.769vw);

@@ -17,7 +17,9 @@ const menus = document.querySelectorAll('.gnb li');
 
 toggle.addEventListener('click', (e) => {
     e.preventDefault();
-    nav.classList.toggle('style');
+    if (scrollY <= section.offsetTop) {
+        nav.classList.toggle('style');
+    }
     e.currentTarget.classList.toggle('active_toggle');
     gnb.classList.toggle('active_menu');
 });
@@ -27,7 +29,9 @@ menus.forEach(menu => {
         e.preventDefault();
         toggle.classList.remove('active_toggle');
         gnb.classList.remove('active_menu');
-        nav.classList.remove('style');
+        if (scrollY <= section.offsetTop) {
+            nav.classList.remove('style');
+        }
     });
 });
 
