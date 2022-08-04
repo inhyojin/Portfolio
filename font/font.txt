@@ -1,6 +1,0 @@
-h2 headTit 24rem
-h3 menu 6.1rem
-h4 tit 8.1rem
-h5 subTit 3.7rem
-h6 txtTit 3.3rem
-txt 2.2rem
