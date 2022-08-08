@@ -50,13 +50,20 @@ h5.con_tit2 {
     line-height: 1.6;
 }
 
+nav h1 img {
+    width: 140px;
+}
+nav #util, nav #util_m {
+    display: none;
+}
 
-
-
+header {
+    height: 600px;
+}
 
 /* gallery */
-.gallery {
-    padding-bottom: 100px;
+#main_gallery {
+    height: 800px;
 }
 .gallery figcaption {
     height: 10vw;
@@ -70,3 +77,6 @@ h5.con_tit2 {
     height: 26vw;
     padding: 40px;
 }
+
+
+

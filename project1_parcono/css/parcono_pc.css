@@ -40,6 +40,16 @@ nav {
     box-sizing: border-box;
     height: 72px; line-height: 72px;
     border-bottom: 1px solid #fff;
+    transition: .3s;
+}
+nav.active {
+    background-color: #fff;
+}
+nav.active img {
+    filter: brightness(0);
+}
+nav.active a {
+    color: #000;
 }
 /* logo */
 nav h1 img {
@@ -236,7 +246,9 @@ header #control li img {
 }
 
 /*** main_menu ***/
+/*** main_menu ***/
 #main_menu {
+    cursor: pointer;
     display: flex;
     justify-content: center;
 }
@@ -253,10 +265,10 @@ header #control li img {
 #main_menu:last-child {
     margin-right: 0;
 }
-#main_menu .menu1 {background: url(../images/menu_1.png) no-repeat 100% / cover; }
-#main_menu .menu2 {background: url(../images/menu_2.png) no-repeat 100% / cover; }
-#main_menu .menu3 {background: url(../images/menu_3.png) no-repeat 100% / cover; }
-#main_menu .menu4 {background: url(../images/menu_4.png) no-repeat 100% / cover; }
+#main_menu .menu1 {background: url(../images/menu_1.png) no-repeat 50% / cover; }
+#main_menu .menu2 {background: url(../images/menu_2.png) no-repeat 50% / cover; }
+#main_menu .menu3 {background: url(../images/menu_3.png) no-repeat 50% / cover; }
+#main_menu .menu4 {background: url(../images/menu_4.png) no-repeat 50% / cover; }
 
 #main_menu h5 {
     color: #fff;
@@ -324,31 +336,35 @@ header #control li img {
 #main_product .viewmore img {
     margin-left: 0.573vw;
 }
+
 /*** main_gallery ***/
 #main_gallery {
+    height: 52.083vw;
     overflow: hidden;
     background-color: var(--bg-gallery);
-    opacity: .8;
 }
 #main_gallery .gallery {
     display: flex;
+    height: 500px;
 }
 #main_gallery figure {
     margin-right: 5.208vw;
     width: 34.896vw;
-    height: 41.438vw;
 }
 #main_gallery figure:last-child {
     margin-right: 0;
 }
 #main_gallery figcaption {
-    height: 180px;
+    height: 190px;
     padding: 1.9vw;
     box-sizing: border-box;
     background-color: #fff;
 }
 #main_gallery figcaption p {
     margin: 0.533vw 0 ;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0px;
 }
 /*** main_recruit ***/
 #main_recruit {
@@ -381,6 +397,7 @@ header #control li img {
     margin: 0 auto;
     transition: .2s;
 }
+
 /*** main_contact ***/
 #main_contact h2 {
     margin-bottom: 1.406vw;

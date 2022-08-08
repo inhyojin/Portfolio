@@ -55,7 +55,8 @@ nav #gnb {
     font-family: 'leferi';
     font-weight: 500;
     letter-spacing: 0.05rem;
-    background-color: rgba(53, 62, 75, 0.95);
+    background-color: #fff;
+    color: #000;
     transition: .3s;
 }
 nav #gnb.active {
@@ -67,7 +68,6 @@ nav #gnb li:last-child {
 }
 nav #gnb li a {
     padding: 0 20px;
-    border-bottom: 1px solid #fff;
 }
 /* util_m */
 nav #util_m {
@@ -289,29 +289,19 @@ header #control li:last-child {
 
 /*** main_gallery ***/
 #main_gallery {
+    height: 750px;
     overflow: hidden;
-    padding-bottom: 22.564vw;
     background-color: var(--bg-gallery);
 }
-
-/* 스와이퍼 */
-#main_gallery figure ~ figure {
-    display: none;
-}
-
-
 #main_gallery figure {
+    overflow: hidden;
     box-sizing: border-box;
+    height: 100%;
     width: 89.231vw;
-    height: 85.641vw;
     margin: 0 auto;
     margin: 5.385vw 5.345vw 6.410vw;
 }
-#main_gallery figure img {
-    height: 58.718vw;
-}
 #main_gallery figure figcaption {
-    height: 26.923vw;
     box-sizing: border-box;
     padding: 5.385vw 5.897vw;
     background-color: #fff;
@@ -321,21 +311,6 @@ header #control li:last-child {
 }
 #main_gallery figcaption p {
     margin-top: 1.795vw;
-}
-#main_gallery .control {
-    width: 9.487vw;
-    margin: 0 auto;
-    display: flex;
-}
-#main_gallery .control li {
-    width: 2.821vw;
-    height: 0.513vw;
-    background-color: var(--color-grey);
-    opacity: .5;
-}
-#main_gallery .control li:nth-child(2) {
-    background-color: var(--color-main);
-    margin: 0 0.513vw;
 }
 /*** main_recruit ***/
 #main_recruit {

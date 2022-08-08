@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="./css/font.css">
     <!-- minireset -->
     <link rel="stylesheet" href="./css/minireset.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <!-- pc -->
     <link rel="stylesheet" media="(min-width:678px) and (max-width:1920px)" href="./css/parcono_pc.css">
     <!-- tablet -->
     <link rel="stylesheet" media="(min-width:678px) and (max-width:1439px)" href="./css/parcono_tablet.css">
     <!-- mobile -->
     <link rel="stylesheet" media="(min-width:320px) and (max-width:677px)" href="./css/parcono_m.css">
+    <!-- swiper js -->
+    <script type="text/javascript" src="./js/swiper-bundle.min.js"></script>
 </head>
 <body>
     <!------- goUp ------>
@@ -23,7 +27,7 @@
     <!------- nav ------->
     <nav>
         <!-- logo -->
-        <h1><a href="#"><img src="./images/logo_w.svg" alt="로고"></a></h1>
+        <h1><a href="#"><img class="logo" src="./images/logo_w.svg" alt="로고"></a></h1>
         <!-- toggle menu icon -->
         <a id="gnb_m" href="#" class="active"><img src="./icon/m_nav_menu.svg" alt=""></a>
         <!-- gnb -->
@@ -39,7 +43,7 @@
             <li><a href="#">korean</a></li>
             <li><a href="#">english</a></li>
         </ul>
-        <!-- util : search + more + register + lang -->
+        <!-- util -->
         <ul id="util">
             <li id="search"><a href="#"><img src="./icon/util_search.svg" alt="제품 찾기"></a></li>
             <li id="more"><a href="#"><img src="./icon/util_more.svg" alt="더보기 메뉴"></a></li>
@@ -98,16 +102,16 @@
         </article>
         <!-- main_menu -->
         <article id="main_menu">
-            <a class="menu1" href="#">
+            <a class="menu1">
                 <h5 class="con_tit2">kitchen</h5>
             </a>
-            <a class="menu2" href="#">
+            <a class="menu2">
                 <h5 class="con_tit2">living</h5>
             </a>
-            <a class="menu3" href="#">
+            <a class="menu3">
                 <h5 class="con_tit2">bedroom</h5>
             </a>
-            <a class="menu4" href="#">
+            <a class="menu4">
                 <h5 class="con_tit2">other</h5>
             </a>
         </article>
@@ -185,34 +189,53 @@
         <!-- main_gallery -->
         <article id="main_gallery">
             <h2 class="tit">gallery</h2>
-            <div class="gallery">
-                <figure>
-                    <img src="./images/gallery_1.png" alt="">
-                    <figcaption>
-                        <h5 class="con_tit2">스탠스 원목에 대하여</h5>
-                        <p class="con_txt">고유의 결을 나타내고 내구성과 함수율이 월등한 목재만을 사용합니다.</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="./images/gallery_2.png" alt="">
-                    <figcaption>
-                        <h5 class="con_tit2">원목가구, 아름답게 늙어가는 매력</h5>
-                        <p class="con_txt">스탠스 가구와 오래도록 함께하세요.</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="./images/gallery_3.png" alt="">
-                    <figcaption>
-                        <h5 class="con_tit2">가구를 향한 목수들의 애착</h5>
-                        <p class="con_txt">스탠스의 모든 제품은 자사 목수들이 직접 제작합니다.</p>
-                    </figcaption>
-                </figure>
+            <div class="swiper mySwiper gallery ">
+                <div class="swiper-wrapper">
+                    <figure class="swiper-slide">
+                        <img src="./images/gallery_1.png" alt="">
+                        <figcaption>
+                            <h5 class="con_tit2">스탠스 원목에 대하여</h5>
+                            <p class="con_txt">고유의 결을 나타내고 내구성과 함수율이 월등한 목재만을 사용합니다.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img src="./images/gallery_2.png" alt="">
+                        <figcaption>
+                            <h5 class="con_tit2">원목가구, 아름답게 늙어가는 매력</h5>
+                            <p class="con_txt">스탠스 가구와 오래도록 함께하세요.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img src="./images/gallery_3.png" alt="">
+                        <figcaption>
+                            <h5 class="con_tit2">가구를 향한 목수들의 애착</h5>
+                            <p class="con_txt">스탠스의 모든 제품은 자사 목수들이 직접 제작합니다.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img src="./images/gallery_1.png" alt="">
+                        <figcaption>
+                            <h5 class="con_tit2">스탠스 원목에 대하여</h5>
+                            <p class="con_txt">고유의 결을 나타내고 내구성과 함수율이 월등한 목재만을 사용합니다.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img src="./images/gallery_2.png" alt="">
+                        <figcaption>
+                            <h5 class="con_tit2">원목가구, 아름답게 늙어가는 매력</h5>
+                            <p class="con_txt">스탠스 가구와 오래도록 함께하세요.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="swiper-slide">
+                        <img src="./images/gallery_3.png" alt="">
+                        <figcaption>
+                            <h5 class="con_tit2">가구를 향한 목수들의 애착</h5>
+                            <p class="con_txt">스탠스의 모든 제품은 자사 목수들이 직접 제작합니다.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <ul class="control">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
         </article>
         <!-- main_recruit -->
         <article id="main_recruit">
@@ -258,17 +281,15 @@
         <!-- main_location -->
         <article id="main_location">
             <h2 class="tit">location</h2>
-            <ul class="list">
-                <li class="con_txt"><a href="#">스탠스</a></li>
-                <li class="con_txt"><a href="#">카페 퍼</a></li>
-            </ul>
-            <div id="map"></div>
-            <div class="info">
-                <p class="corp con_txt">스탠스 본점</p>
-                <p class="information con_txt">
-                    전화 : 031-949-8082 / 팩스 : 031-949-0402
-                    / 영업시간 : 9:00AM - 6:00PM (연중무휴)
-                </p>
+            <div class="map_wrap1">
+                <div id="map"></div>
+                <div class="info">
+                    <p class="corp con_txt">스탠스 본점</p>
+                    <p class="information con_txt">
+                        전화 : 031-949-8082 / 팩스 : 031-949-0402
+                        / 영업시간 : 9:00AM - 6:00PM (연중무휴)
+                    </p>
+                </div>
             </div>
         </article>
     </main>
@@ -290,36 +311,31 @@
         <script>
             var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
             var options = { //지도를 생성할 때 필요한 기본 옵션
-            center: new kakao.maps.LatLng(37.818835696168016, 126.76266112984092), //지도의 중심좌표.
+            center: new kakao.maps.LatLng(37.818835696168016, 126.76266112984092), //지도의 중심좌표
             level: 2 //지도의 레벨(확대, 축소 정도)
             };
-    
             var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-    
-            // 마커가 표시될 위치입니다 
+            // 마커가 표시될 위치
             var markerPosition  = new kakao.maps.LatLng(37.81882480601536, 126.7628457225128); 
-    
-            // 마커를 생성합니다
+            // 마커 생성
             var marker = new kakao.maps.Marker({
                 position: markerPosition
             });
             marker.setMap(map);
     
-            //인포윈도우 표시 위치입니다
-            var iwContent = '<div style="padding:8px 15px; font-weight:bold;">PARCONO</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-        iwPosition = new kakao.maps.LatLng(37.81882480601536, 126.7628457225128); 
+            //인포윈도우 표시 위치
+            var iwContent = '<div style="padding:8px 15px; font-weight:bold;">PARCONO</div>',
+            iwPosition = new kakao.maps.LatLng(37.81882480601536, 126.7628457225128); 
     
-        // 인포윈도우를 생성합니다
-    var infowindow = new kakao.maps.InfoWindow({
-        position : iwPosition, 
-        content : iwContent 
-    });
-    infowindow.open(map, marker); 
+            // 인포윈도우를 생성
+            var infowindow = new kakao.maps.InfoWindow({
+                position : iwPosition, 
+                content : iwContent 
+            });
+            infowindow.open(map, marker); 
         </script>
     <!-- js -->
-    <script type="text/javascript" src="./js/toggle.js"></script>
-    <script type="text/javascript" src="./js/eventModel.js"></script>
-    <script type="text/javascript" src="./js/slide.js"></script>
-    <script type="text/javascript" src="./js/tabMenu.js"></script>
-</body>
-</html>
+    <script type="text/javascript" src="./js/script.js"></script>
+    </body>
+    
+    </html>
