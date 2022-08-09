@@ -1,0 +1,42 @@
+@charset "uft-8";
+
+:root {
+    color: #040a2b;
+    background: linear-gradient(to bottom right, #F4F4F4, #f8f8f6);
+    font-family: 'samsungsharp';
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+    letter-spacing: -0.1rem;
+
+    /* font */
+    --font-headtit: 22rem;
+    --font-menu: 5.6rem;
+    --font-tit: 7.5rem;
+    --font-subtit: 5rem;
+    --font-txttit: 2.2rem;
+    --font-txt: 2.1rem;
+
+
+    /* border */
+    --border: 1px solid #000;
+}
+.headtit {
+    font-size: var(--font-headtit);
+}
+.menu {
+    font-size: var(--font-menu);
+}
+.tit {
+    font-size: var(--font-tit);
+}
+.subtit {
+    font-size: var(--font-subtit);
+}
+.txttit {
+    font-size: var(--font-txttit);
+}
+.txt {
+    font-size: var(--font-txt);
+}

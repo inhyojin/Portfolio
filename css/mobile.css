@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+:root {
+    font-size: 7px;
+}
+
+.skill .box {
+    height: 92vh;
+    padding: 40px;
+}
+.skill h4 {
+    font-size: 4rem;
+}
+
+.submenu {
+    padding: 0 30px;
+}
+.submenu h4 {
+    margin: 0 auto;
+    font-size: 5rem;
+}
+.work .box {
+    padding: 30px;
+}
+.work .txtbox {
+    height: 40vh;
+}
+.work .img {
+    background-color: aqua;
+    height: 40vh;
+}
+.work .txtbox .img img {
+    width: 90%;
+}
