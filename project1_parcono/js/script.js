@@ -1,4 +1,3 @@
-// nav 컬러 변경
 const nav = document.querySelector("nav");
 const headTit = document.querySelector("header .tit");
 console.log(headTit.offsetTop);
@@ -10,7 +9,6 @@ addEventListener("scroll", () => {
   }
 });
 
-// 캐러셀 슬라이드
 const slideItems = document.querySelectorAll(".slideItem");
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
@@ -44,7 +42,6 @@ setInterval(function () {
 
 autoSlide();
 
-// gnb 토글
 const toggleBtn = document.querySelector("#gnb_m");
 const menu = document.querySelector("#gnb");
 
@@ -53,7 +50,6 @@ toggleBtn.addEventListener("click", (e) => {
   menu.classList.toggle("active");
 });
 
-// 탭 메뉴
 const lis = document.querySelectorAll("#list li");
 const prds = document.querySelectorAll(".product");
 lis.forEach((li, index) => {
@@ -70,7 +66,6 @@ lis.forEach((li, index) => {
   });
 });
 
-// gallery swiper
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -97,7 +92,6 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
-// form 이벤트
 const inputs = document.querySelectorAll("input");
 const labels = document.querySelectorAll("label");
 
