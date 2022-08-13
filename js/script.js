@@ -52,3 +52,21 @@ topBtn.addEventListener("click", (e) => {
   e.preventDefault();
   nav.classList.toggle("active");
 });
+
+new fullpage("#fullpage", {
+  //options here
+  autoScrolling: true,
+  scrollHorizontally: true,
+
+  afterLoad: function (origin, destination, direction, trigger) {
+    var origin = this;
+
+    if (origin.index == 0 && direction == "down") {
+      document.querySelectorAll(".skill h4").forEach((item) => {
+        item.style.color = "red";
+      });
+    } else if (origin.index == 2 && direction == "up") {
+      document.querySelector(".skill h4").style.color = "orange";
+    }
+  },
+});
