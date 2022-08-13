@@ -226,11 +226,18 @@
     <script src="./js/fullpage.js"></script>
     <script type="text/javascript">
         new fullpage('#fullpage', {
-            //options here
             autoScrolling: true,
-            scrollHorizontally: true
+            scrollHorizontally: true,
 
-            
+            afterLoad: function (origin, destination, direction, trigger) {
+                var origin = this;
+
+                if (origin.index == 0 && direction == "down") {
+                    document.querySelectorAll(".skill h4").forEach((item) => {
+                        item.classList.add('move');
+                    });
+                }
+            },
         });
     </script>
     <script type="text/javascript" src="./js/script.js"></script>
