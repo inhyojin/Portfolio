@@ -1,0 +1,121 @@
+@charset "uft-8";
+
+:root {
+    font-size: 8px;
+}
+.modal {
+    display: none;
+}
+
+
+nav {
+    padding: 15px 40px;
+    height: 8vh;
+}
+nav .logo {
+    width: 140px;
+}
+nav .gnb {
+    background-color: #fff;
+    position: absolute;
+    top: 8vh; left: 0;
+    width: 100%; 
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    transition: height .3s;
+}
+.gnb a {
+    padding: 15px 40px;
+}
+
+nav .btn {
+    cursor: pointer;
+    display: block;
+    width: 40px; height: 31px;
+    position: relative;
+}
+nav .btn span {
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px; height: 5px;
+    background-color: #040a2b;
+}
+nav .btn span:nth-child(2) {
+    margin: 8px 0;
+}
+nav.active {background-color: #fff;}
+nav.active .gnb {height: 450px;}
+nav.active .bar1 {transform-origin: center; transform: translateY(13px) rotate(-45deg) ;}
+nav.active .bar2 {transform-origin: center; transform: scale(0);}
+nav.active .bar3 {transform-origin: center; transform: translateY(-13px) rotate(45deg);}
+
+
+section, header {
+    padding-top: 8vh;
+}
+
+/* intro */
+.intro .txtbox {
+    width: 90%;
+    margin: 0 auto;
+}
+.intro h2 {
+    font-size: 15vw;
+}
+
+/* skill */
+.skill {
+    flex-flow: column;
+}
+.skill .box {
+    height: 46vh;
+    width: 100%;
+    padding: 60px;
+}
+.skill .box:first-child {
+    border-right: none;
+}
+
+/* work */
+.submenu {
+    height: 11vh;
+}
+.submenu h5 {
+    display: none;
+}
+.work .box_wrap {
+    flex-flow: column;
+}
+.work .box {
+    height: 81vh;
+    width: 100%;
+}
+.work .img {
+    margin: 0 auto;
+    width: 70%;
+}
+
+#work3 .box {
+    flex-flow: column;
+}
+
+/* contact */
+.contact {
+    flex-flow: column;
+}
+#contact > div {
+    width: 100%;
+}
+.contact .box_wrap2 > div {
+    height: 27.666666vh;
+}
+.contact .box_wrap2 img {
+    bottom: 16%; right: 28%;
+}
+
+.contact .box_wrap3 .box2 {
+    height: 85.5vh;
+}

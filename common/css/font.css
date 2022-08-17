@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'samsungsharp';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url(../font/SamsungSharpSansRegular-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'pretendard';
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: url(../font/PretendardVariable.woff2) format('woff2-variations');
+}
+@font-face {
+    font-family: 'leferi';
+    src: url(../font/LeferiBaseRegular.otf) format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'leferi';
+    src: url(../font/LeferiBaseBold.otf) format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'playfair';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url(../font/playfair-display-v30-latin-regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'playfair';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url(../font/playfair-display-v30-latin-600.woff2) format('woff2');
+}
+
+
