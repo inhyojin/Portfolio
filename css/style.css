@@ -17,13 +17,7 @@ section, header {
     display: block;
     width: 100%; height: 100%;
 }
-/* emoji */
-.emoji {
-    position: fixed;
-    font-size: 5rem;
-    will-change: transform;
-    z-index: 9999999999;
-}
+
 
 /* modal */
 .modal {
@@ -193,10 +187,7 @@ nav.color4 {background-color: #91A38A;}
     opacity: 1;
 }
 
-.skill h4.bg1 {background-color: #EDE7D7;}
-.skill h4.bg2 {background-color: #F6D8B4;}
-.skill h4.bg3 {background-color: #F9E29A;}
-.skill h4.bg4 {background-color: #FCC662;}
+
 
 .skill h4:hover::before {
     transform: scaleX(1);
