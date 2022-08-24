@@ -1,27 +1,26 @@
 @charset "utf-8";
 
-/* 한글 서체 */
+/* ko */
 @font-face {
 	font-family: 'pretendard';
 	font-weight: 45 920;
 	font-style: normal;
 	font-display: swap;
-	src: url(../font/PretendardVariable.woff2) format('woff2-variations');
+	src: url(../../common/font/PretendardVariable.woff2) format('woff2-variations');
 }
 
-/* 영문 서체 */
+/* en */
 @font-face {
-    font-family: 'leferi';
-    src: url(../font/LeferiBaseRegular.otf) format('opentype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'leferi';
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: url(../../common/font/LeferiBaseRegular.otf) format('opentype');
 }
 @font-face {
-    font-family: 'leferi';
-    src: url(../font/LeferiBaseBold.otf) format('opentype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'leferi';
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url(../../common/font/LeferiBaseBold.otf) format('opentype');
 }
-

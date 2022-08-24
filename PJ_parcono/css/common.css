@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+:root {
+    font-family: 'pretendard','BlinkMacSystemFont', 'Apple SD Gothic Neo','helvetica','Malgun Gothic','맑은 고딕', sans-serif;
+
+    --font-en: 'leferi', sans-serif;
+
+    --size-gnb: 1.6rem;
+    --size-tit: 4.6rem;
+    --size-subtit: 1.5rem;
+    --size-con-tit-en: 3rem;
+    --size-con-tit-ko: 3.4rem;
+    --size-txt: 2.2rem;
+
+    --spacing-header-tit: 0.3rem;
+    --spacing-header-txt: 0.03rem;
+    --spacing-tit: 0.345rem;
+    --spacing-subtit: 0.374rem;
+    --spacing-con-tit-en: 0.116rem;
+    --spacing-txt: -0.044rem;
+    --spacing-more: -0.1rem;
+
+    --height-txt: 3.7rem;
+
+    --weight-tit-en: 700;
+    --weight-txt-en: 500;
+    --weight-header-txt: 300;
+    --weight-con-tit-ko: 500;
+    --weight-txt: 400;
+
+    --border-tr: 1px solid #cdcbbe4b;
+    --border-in: 1px solid #bfbdae;
+    --label-bg:#faf9f4;
+}
+header h2.tit {
+    text-transform: capitalize;
+    font-size: 6rem;
+    font-family: var(--font-en);
+    font-weight: var(--weight-txt-en);
+    letter-spacing: var(--spacing-header-tit);
+}
+header p.txt {
+    font-size: 2.5rem;
+    letter-spacing: var(--spacing-header-txt);
+}
+header .control {
+    font-size: 15px;
+}
+.gnb, .util {
+    letter-spacing: 0.06rem;
+    font-family: var(--font-en);
+    font-size: var(--size-gnb);
+}
+h2.tit {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-en);
+    font-size: var(--size-tit);
+    font-weight: var(--weight-tit-en);
+    letter-spacing: var(--spacing-header-tit);
+    margin-bottom: 8rem;
+}
+h3.subtit {
+    text-transform: uppercase;
+    font-family: var(--font-en);
+    font-size: var(--size-subtit);
+    font-weight: var(--weight-tit-en);
+    letter-spacing: var(--spacing-subtit);
+}
+h4.contit_en {
+    text-transform: uppercase;
+    font-family: var(--font-en);
+    font-size: var(--size-con-tit-en);
+    font-weight: var(--weight-tit-en);
+    letter-spacing: var(--spacing-con-tit-en);
+}
+h5.contit_ko {
+    font-size: var(--size-con-tit-ko);
+    font-weight: var(--weight-con-tit-ko);
+}
+p.txt, .txt {
+    font-size: var(--size-txt);
+    font-weight: var(--weight-txt);
+    line-height: var(--height-txt);
+}
+
+.bg_bw {background-color: #FAF9F5;}
+.bg_bl {background-color:#F6FAFF;}
+.bg_mbl {background-color: #efe8dd;}
+.bg_rbl {background-color: #faf9f8;}
+
+.bw {color: #4B4135;}
+.bl {color: #353E4B;}
+.gld {color: #CABE89;}
+
+.btn_bw {background-color: #4B4135;}
+.btn_bl {background-color: #353E4B;}
+
+.btn_bw:hover {background-color: hsl(33, 17%, 10%);}
+.btn_bl:hover {background-color: hsl(215, 17%, 10%);}
+
+.btn {
+    width: 29.5rem;
+    height: 8rem;
+    line-height: 8rem;
+    text-transform: uppercase;
+    display: block;
+    color: #fff;
+    text-align: center;
+    transition: .3s;
+}
+
+#contact tr {
+    border-bottom: var(--border-tr);
+}
+#contact input {
+    border: var(--border-in);
+}
