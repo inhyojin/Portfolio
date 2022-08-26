@@ -177,22 +177,8 @@ nav.color4 {background-color: #91A38A;}
     align-items: center;
     position: relative;
     cursor: pointer;
-    position: relative;
-    transform: translateY(100%);
-    opacity: 0;
-    transition: 2s;
-}
-.skill h4.move {
-    transform: translateY(0);
-    opacity: 1;
 }
 
-
-
-.skill h4:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
-}
 .skill .arrow {
     width: 80px; height: 80px;
     position: absolute;
