@@ -1,7 +1,7 @@
 @charset "uft-8";
 
 :root {
-    color: #000000;
+    color: #000;
     font-weight: 400;
     font-size: 10px;
     text-transform: capitalize;
@@ -17,10 +17,9 @@
     --font-txttit: 2.2rem;
     --font-txt: 2.1rem;
 
-
     /* border */
     --border: 1px solid #000;
-    --border-sub: 1px solid hsla(0, 0%, 80%, 0.678);
+    --border-sub: 1px solid rgba(204, 204, 204, 0.678);
     --sub-bg:#ffffff;
 }
 .headtit {
