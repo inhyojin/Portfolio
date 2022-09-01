@@ -1,0 +1,62 @@
+:root {
+    font-size: 52.4%;
+}
+.txt {
+    font-size: 2.6rem;
+    line-height: 3.7rem;
+    letter-spacing: 0.52px;
+}
+h3 {
+    left: 5px;
+}
+
+.gnb {padding-left: 16px;}
+.page3 span {display: inline;}
+.intro .img {
+    height: 70vw;
+    background: url(../images/main.png)no-repeat 50% / cover;
+}
+h3 {font-size: 3.7rem;}
+.intro .txt {display: none;}
+
+.flow_wrap:hover .flow_text {
+    animation-play-state: paused;
+}
+
+.page1, .fnb {
+    flex-flow: row;
+}
+.page1 .txtbox {
+    width: 40%;
+    justify-content: space-between;
+    margin:0;
+}
+.page1 .pic {
+    margin-left: 7vw;
+    width: 35%; height: 28vw;
+}
+.page4 {
+    justify-content: space-between;
+    flex-flow: row;
+}
+.fnb .left, 
+.fnb .right {
+    width: 46%; height: 40%;
+    margin: auto 0 3vw;
+}
+.fnb .left {margin-right: 4vw;}
+
+.program .slide_wrapper {
+    height: 42.396vw;
+}
+.program h2 {
+    margin-bottom: 60px;
+}
+.program .slide {flex-flow: row;}
+.program .slide .img_wrap {
+    height: 100%;
+    order: 2;
+}
+.btn li {
+    width: 82px; height: 82px;
+}

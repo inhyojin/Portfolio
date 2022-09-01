@@ -1,0 +1,103 @@
+:root {
+    font-family: 'Montserrat', sans-serif;
+}
+.txt, h3,h4,h6 {
+    font-family: 'pretendard';
+}
+h2 {
+    text-transform: capitalize;
+    font-size: 7.6rem;
+    font-weight: 500;
+    letter-spacing: -1.22px;
+}
+.txt {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.32px;
+    line-height: 4.8rem;
+}
+.sub {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.subtit {
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+.gnb {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+}
+h3 {
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    line-height: 7.4rem;
+}
+h4 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    line-height: 4.4rem;
+}
+
+.guide h5 {
+    text-transform: capitalize;
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+}
+.guide h6 {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    line-height: 4.4rem;
+}
+.contit {
+    font-family: 'Prata', serif;
+    font-size: 13rem;
+    font-weight: 300;
+    letter-spacing: -4px;
+}
+.more {
+    display: block;
+    width: 24rem;
+    height: 9.6rem; line-height: 9.6rem;
+    border-radius: 5rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3.6rem;
+    border: 1px solid #000;
+    letter-spacing: 0.6px;
+    transition: .3s;
+}
+.more:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+footer .term {
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+footer .wrap {
+    padding: 16px 0;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    display: flex;
+    flex-flow: column;
+}
+footer .txt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: -0.48px;
+}
+footer .subtit {
+    font-size: 2.6rem;
+    font-weight: 300;
+    letter-spacing: 0.52px;
+}
+footer .sub {display: none;}
+
+.pf_btn { margin: 100px auto 36px; width: 238px ; height: 55px; line-height: 55px; font-size: 16px; color: #fff;background-color: #000; text-align: center;}
