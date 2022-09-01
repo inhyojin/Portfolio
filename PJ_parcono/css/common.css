@@ -34,7 +34,7 @@
 }
 header h2.tit {
     text-transform: capitalize;
-    font-size: 6rem;
+    font-size: 5rem;
     font-family: var(--font-en);
     font-weight: var(--weight-txt-en);
     letter-spacing: var(--spacing-header-tit);
