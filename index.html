@@ -9,16 +9,15 @@
     <link rel="stylesheet" href="./common/css/minireset.css">
     <!-- font -->
     <link rel="stylesheet" href="./common/css/font.css">
+    <link rel="stylesheet" href="./common/css/custom.css">
+    <!-- mediaQuery -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="(max-width:1440px)" href="./css/tablet.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="./css/mobile.css">
     <!-- fullpage -->
     <link rel="stylesheet" href="./css/fullpage.css">
-    <!-- mediaQuery -->
-    <!-- pc -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- tablet -->
-    <link rel="stylesheet" media="(max-width:1440px)" href="./css/tablet.css">
-    <!-- mobile -->
-    <link rel="stylesheet" media="(max-width:768px)" href="./css/mobile.css">
-    <link rel="stylesheet" href="./common/css/common.css">
+    <script src="./js/fullpage.js"></script>
+    <script defer src="./js/script.js"></script>
 </head>
 <body>
     <!-- emoji -->
@@ -32,7 +31,7 @@
         </div>
         <div class="txtbox">
             <h5 class="txttit">Tel</h5>
-            <h6 class="txttit">010 - 9382 - 3307</h5>
+            <h6 class="txttit">010 - 9382 - 3307</h6>
         </div>
         <div class="txtbox">
             <h5 class="txttit">Github</h5>
@@ -42,7 +41,9 @@
     <!-- nav -->
     <nav>
         <!-- logo -->
-        <h1 class="logo"><a href="#"><img src="./icon/logo.svg" alt=""></a></h1>
+        <h1 class="logo">
+            <a href="#"><img src="./icon/logo.svg" alt=""></a>
+        </h1>
         <!-- gnb -->
         <ul class="gnb">
             <li><a href="#">skill</a></li>
@@ -59,207 +60,227 @@
     </nav>
     <!-- wrapper -->
     <div id="fullpage" class="container">
-    <!-- section1 -->
-    <header class="intro section active">
-        <div class="txtbox">
-            <h2 class="headtit">
-                <span class="tit1">Creative</span>
-                <span class="tit2">&Design</span>
-                <span class="tit3">&Publishing</span>
-            </h2>
-            <p class="txt">© HYOJIN. All rights reserved. The material on this site may not be<br>reproduced, distributed, transmitted, cached or otherwise used, except with prior permission of HYO JIN</p>
-        </div>
-    </header>
-    <!-- section2 -->
-    <section id="skill" class="section skill">
-            <div class="box">
-                <div class="txtbox">
-                    <h4 class="tit bg1">HTML5 & CSS3<span class="arrow"></span></h4>
+        <!-- section1 -->
+        <header class="intro section active">
+            <div class="txtbox">
+                <h2 class="headtit">
+                    <span class="tit1">Creative</span>
+                    <span class="tit2">&Design</span>
+                    <span class="tit3">&Publishing</span>
+                </h2>
+                <p class="txt">© HYOJIN. All rights reserved. The material on this site may not be<br>reproduced, distributed, transmitted, cached or otherwise used, except with prior permission of HYO JIN</p>
+            </div>
+        </header>
+        <!-- section2 -->
+        <section id="skill" class="section skill">
+                <div class="box">
+                    <div class="txtbox">
+                        <h4 class="tit bg1">HTML5 & CSS3</h4>
+                        <h6 class="txttit">웹 사이트 구축 및 디자인</h6>
+                        <h6 class="txttit">웹표준 및 접근성 준수</h6>
+                        <h6 class="txttit">Mediaquery를 이용한 반응형 웹 제작</h6>
+                        <h6 class="txttit">CSS animation을 활용한 모션 구현</h6>
+                        <h6 class="txttit"><a href="https://drive.google.com/file/d/1INTv-BS8ibEjwf5rgC9wFvle8z0_MDzW/view?usp=sharing"><span>퍼블리싱 가이드</span>&nbsp; 준수</a></h6>
+                    </div>
+                    <div class="txtbox">
+                        <h4 class="tit bg2">JavaScript(ES6) & jQuery</h4>
+                        <h6 class="txttit">웹 사이트 구현</h6>
+                        <h6 class="txttit">이벤트 메서드 구현</h6>
+                    </div>
                 </div>
-                <div class="txtbox">
-                    <h4 class="tit bg2">JavaScript(ES6) & jQuery<span class="arrow"></span></h4>
+                <div class="box">
+                    <div class="txtbox">
+                        <h4 class="tit bg3">Photoshop & Illust<br>XD & Zaplin</h4>
+                        <h6 class="txttit">웹 디자인</h6>
+                        <h6 class="txttit">UI/UX 디자인</h6>
+                        <h6 class="txttit">프로토타입 제작</h6>
+                        <h6 class="txttit">XD Zeplin 활용 공동 작업</h6>
+                    </div>
+                    <div class="txtbox">
+                        <h4 class="tit bg4">Git & Github</h4>
+                        <h6 class="txttit">CLI기반 Git Bash 사용</h6>
+                        <h6 class="txttit">github를 이용한 배포</h6>
+                    </div>
+                </div>
+        </section>
+        <!-- section 3-->
+        <section id="work1" class="section work">
+            <div class="slide slide1">
+                <div class="submenu">
+                    <h5 class="subtit">UI/UX & Publising</h5>
+                    <h4 class="tit">Responsive Web</h4>
+                </div>
+                <div class="box_wrap">
+                    <!-- box1 -->
+                    <div class="box box1">
+                        <a href="./sub/sub_parcono.html">
+                        <div class="txtbox">
+                            <h5 class="subtit t_bg1">Parcono</h5>
+                            <h6 class="txttit">
+                                <span>#javaScript #kakao API</span>
+                            </h6>
+                            <p class="txt">22. 06. 11 - 07 . 02</p>
+                        </div>
+                        <div class="imgbox">
+                            <div class="img img1">img1</div>
+                            <div class="img img2">img2</div>
+                            <div class="img img3">img3</div>
+                        </div>
+                        </a>
+                    </div>
+                    <!-- box2 -->
+                    <div class="box box2">
+                        <a href="./sub/sub_millac.html">
+                        <div class="txtbox">
+                            <h5 class="subtit t_bg2">millac the market</h5>
+                            <h6 class="txttit">
+                                <span>#gsap #horizontal scroll</span>
+                            </h6>
+                            <p class="txt">22. 07. 05 - 07. 16</p>
+                        </div>
+                        <div class="imgbox">
+                            <div class="img img1">img1</div>
+                            <div class="img img2">img2</div>
+                            <div class="img img3">img3</div>
+                        </div>
+                        </a>
+                    </div>
+                    <!-- box3 -->
+                    <div class="box box3">
+                        <a href="./sub/sub_estee.html">
+                        <div class="txtbox">
+                            <h5 class="subtit t_bg3">Estee Lauder</h5>
+                            <h6 class="txttit">
+                                <span>#CSS vriable #swiper #video</span>
+                            </h6>
+                            <p class="txt">22. 07. 17 - 07. 21</p>
+                        </div>
+                        <div class="imgbox">
+                            <div class="img img1">img1</div>
+                            <div class="img img2">img2</div>
+                            <div class="img img3">img3</div>
+                        </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="box">
-                <div class="txtbox">
-                    <h4 class="tit bg3">Photoshop & Illust<br>XD & Zaplin<span class="arrow"></span></h4>
+            <div class="slide slide2">
+                <div class="submenu">
+                    <h5 class="subtit">UI/UX Design & Publising</h5>
+                    <h4 class="tit">Responsive Web</h4>
                 </div>
-                <div class="txtbox">
-                    <h4 class="tit bg4">Git & Github<span class="arrow"></span></h4>
+                <div class="box_wrap">
+                    <!-- box1 -->
+                    <div class="box box1">
+                        <a href="">
+                        <div class="txtbox">
+                            <h5 class="subtit t_bg4">CJ 제일제당</h5>
+                            <h6 class="txttit">
+                                <span>#grid #SCSS</span>
+                            </h6>
+                            <p class="txt">22. 07. 06 - 07 . 13</p>
+                        </div>
+                        <div class="imgbox">
+                            <div class="img img1">img1</div>
+                        </div>
+                        </a>
+                    </div>
+                    <!-- box2 -->
+                    <div class="box box2">
+                        <a href="">
+                        <div class="txtbox">
+                            <h5 class="subtit t_bg5">more</h5>
+                            <h6 class="txttit">
+                                <span>기대해주세요!</span>
+                            </h6>
+                        </div>
+                        <div class="imgbox">
+                            <div class="img img1">img1</div>
+                            <div class="img img2">img2</div>
+                            <div class="img img3">img3</div>
+                        </div>
+                        </a>
+                    </div>
+                    <!-- box3 -->
+                    <div class="box box3">
+                        <a href="">
+                        <div class="txtbox">
+                            <h5 class="subtit t_bg6">more</h5>
+                            <h6 class="txttit">
+                                <span>기대해주세요!</span>
+                            </h6>
+                        </div>
+                        <div class="imgbox">
+                            <div class="img img1">img1</div>
+                            <div class="img img2">img2</div>
+                            <div class="img img3">img3</div>
+                        </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-    </section>
-    <!-- section 3-->
-    <section id="work1" class="section work">
-        <div class="slide slide1">
+        </section>
+        <!-- section 5 -->
+        <section id="work2" class="section work">
             <div class="submenu">
-                <h5 class="subtit">UI/UX & Publising</h5>
-                <h4 class="tit">Responsive Web</h4>
+                <h5 class="subtit">UI/UX Design & Prototype</h5>
+                <h4 class="tit">App Application</h4>
             </div>
-            <div class="box_wrap">
-                <!-- box1 -->
-                <div class="box box1">
-                    <a href="./sub/sub_parcono.html">
-                    <div class="txtbox">
-                        <h5 class="subtit t_bg1">Parcono</h5>
-                        <h6 class="txttit">
-                            <span>#Flex & Position</span>
-                            <span>#slide #tabmenu #form</span>
-                        </h6>
-                        <p class="txt">22. 06. 11 - 06 . 18</p>
-                    </div>
-                    <div class="imgbox">
-                        <div class="img img1">img1</div>
-                        <div class="img img2">img2</div>
-                        <div class="img img3">img3</div>
-                    </div>
-                    </a>
-                </div>
-            
-                <!-- box2 -->
-                <div class="box box2">
-                    <a href="">
-                    <div class="txtbox">
-                        <h5 class="subtit t_bg2">Vital sign</h5>
-                        <h6 class="txttit">
-                            <span>#Flex & Grid & position</span>
-                            <span>#scrollEvent #video #kakao api</span>
-                        </h6>
-                        <p class="txt">22. 06. 21 - 06 . 24</p>
-                    </div>
-                    <div class="imgbox">
-                        <div class="img img1">img1</div>
-                        <div class="img img2">img2</div>
-                        <div class="img img3">img3</div>
-                    </div>
-                    </a>
-                </div>
-                <!-- box3 -->
-                <div class="box box3">
-                    <a href="">
-                    <div class="txtbox">
-                        <h5 class="subtit t_bg3">Estee Lauder</h5>
-                        <h6 class="txttit">
-                            <span>#Flex & Grid & Position</span>
-                            <span>#slide #scrollEvent</span>
-                        </h6>
-                        <p class="txt">22. 06. 29 - 07 . 04</p>
-                    </div>
-                    <div class="imgbox">
-                        <div class="img img1">img1</div>
-                        <div class="img img2">img2</div>
-                        <div class="img img3">img3</div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="slide slide2">
-            <div class="submenu">
-                <h5 class="subtit">UI/UX Design & Publising</h5>
-                <h4 class="tit">Responsive Web</h4>
-            </div>
-            <div class="box_wrap">
-                <!-- box1 -->
-                <div class="box box1">
-                    <a href="">
-                    <div class="txtbox">
-                        <h5 class="subtit t_bg4">경기도 미술관</h5>
-                        <h6 class="txttit">
-                            <span>#Flex & Grid & Position</span>
-                            <span>#JavaScript_swiper</span>
-                        </h6>
-                        <p class="txt">22. 07. 06 - 07 . 13</p>
-                    </div>
-                    <div class="imgbox">
-                        <div class="img img1">img1</div>
-                        <div class="img img2">img2</div>
-                        <div class="img img3">img3</div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- section 5 -->
-    <section id="work3" class="section work">
-        <div class="submenu">
-            <h5 class="subtit">UI/UX Design & Prototype</h5>
-            <h4 class="tit">App Application</h4>
-        </div>
-            <!-- box1 -->
             <div class="box">
                 <div class="txtbox">
                     <h5 class="subtit">CU <span>편의점 택배</span></h5>
                     <h6 class="txttit">
-                        <span>#Flex & Grid & Position</span>
-                        <span>#JavaScript_swiper</span>
+                        <span>#team project #prototype </span>
+                        <span>#xd #zeplin #photoshop </span>
                     </h6>
                     <p class="txt">22. 07. 15 - 07 . 19</p>
                 </div>
                 <div class="img">
-                    <img src="./images/cover.png" alt="">
+                    <a href="./sub/sub_cupost.html">
+                    <img src="./images/cover.png" alt=""></a>
                 </div>
             </div>
-    </section>
-    <!-- section 6 -->
-    <section id="contact" class="section contact">
-        <!-- box_wrap1 -->
-        <div class="box_wrap1">
-            <div class="box1 subtit">truth</div>
-            <div class="box2 subtit">Positive</div>
-            <div class="box3 subtit">progressive</div>
-        </div>
-        <!-- box2_wrap -->
-        <div class="box_wrap2">
-            <div class="box1 menu">I look forward to<br>
-                contacting you.<img src="./images/emoji.png" alt=""></div>
-            <div class="box2">
-                <div class="txtbox">
-                    <p class="txt">Email</p>
-                    <p class="txt on">happyhj061@naver.com</p>
+        </section>
+        <!-- section 6 -->
+        <section id="contact" class="section contact">
+            <!-- box_wrap1 -->
+            <div class="box_wrap1">
+                <div class="box1 subtit">passion</div>
+                <div class="box2 subtit">positive</div>
+                <div class="box3 subtit">progressive</div>
+            </div>
+            <!-- box2_wrap -->
+            <div class="box_wrap2">
+                <div class="box1 menu">I look forward to<br>
+                    contacting you.<img src="./images/emoji.png" alt=""></div>
+                <div class="box2">
+                    <div class="txtbox">
+                        <p class="txt">Email</p>
+                        <p class="txt on">happyhj061@naver.com</p>
+                    </div>
+                    <div class="txtbox">
+                        <p class="txt">Phone</p>
+                        <p class="txt on">010 - 9382 - 3307</p>
+                    </div>
                 </div>
-                <div class="txtbox">
-                    <p class="txt">Phone</p>
-                    <p class="txt on">010 - 9382 - 3307</p>
+                <div class="box3">
+                    <div class="txtbox">
+                        <p class="txt">Github</p>
+                        <p class="txt on">https://inhyojin.github.io/Portfolio</p>
+                    </div>
                 </div>
             </div>
-            <div class="box3">
-                <div class="txtbox">
-                    <p class="txt">Github</p>
-                    <p class="txt on">https://inhyojin.github.io/Portfolio</p>
+            <!-- box3_wrap -->
+            <div class="box_wrap3">
+                <div class="box1 menu">Aspiration</div>
+                <div class="box2">
+                    <div class="txtbox">
+                        <p class="txt"></p>
+                        <p class="txt">디자인을 좋아하고 즐기는 웹 디자이너 출신 퍼블리셔 입니다. 이미지만을 다루던 디자이너에서 동적인 것을 만들어 내는 퍼블리셔의 매력에 끌려 전향하게 되었습니다. 탄탄한 기본을 다지기 위해 노력중에 있으며 추후에도 현실에 안주하지 않고 기획과 개발 지식을 꾸준히 습득하여 프로젝트에 무리없이 기여할 수 있는 경쟁력 있는 사람이 되고 싶습니다.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- box3_wrap -->
-        <div class="box_wrap3">
-            <div class="box1 menu">Aspiration</div>
-            <div class="box2">
-                <div class="txtbox">
-                    <p class="txt"></p>
-                    <p class="txt">디자인을 좋아하고 즐기는 웹 디자이너 출신 퍼블리셔 입니다. 이미지만을 다루던 디자이너에서 동적인 것을 만들어 내는 퍼블리셔의 매력에 끌려 전향하게 되었습니다. 탄탄한 기본을 다지기 위해 노력중에 있으며 추후에도 현실에 안주하지 않고 기획과 개발 지식을 꾸준히 습득하여 프로젝트에 무리없이 기여할 수 있는 경쟁력 있는 사람이 되고 싶습니다.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- fullpage -->
-    <script src="./js/fullpage.js"></script>
-    <script type="text/javascript">
-        new fullpage('#fullpage', {
-            autoScrolling: true,
-            scrollHorizontally: true,
-
-            afterLoad: function (origin, destination, direction, trigger) {
-                var origin = this;
-                if (origin.index == 0 && direction == "down") {
-                    document.querySelectorAll(".skill h4").forEach((item) => {
-                        item.classList.add('move');
-                    });
-                }
-            },
-        });
-    </script>
-    <script type="text/javascript" src="./js/script.js"></script>
+        </section>
+    </div>
 </body>
 </html>

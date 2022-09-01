@@ -9,24 +9,26 @@
     <link rel="stylesheet" href="../common/css/minireset.css">
     <!-- font -->
     <link rel="stylesheet" href="../common/css/font.css">
-    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../common/css/custom.css">
     <!-- style -->
+    <link rel="stylesheet" href="./css/subpage.css">
     <link rel="stylesheet" href="./css/sub_parcono.css">
-    <script src="./js/jquery.fadethis.min.js"></script>
-    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../common/js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <a class="goUp" href="#"><img src="./images/goup.svg" alt="위로 가기"></a>
     <!-- header -->
     <header>
-        <nav><h5 class="txttit"><a href="">home</a></h5></nav>
+        <nav><h5 class="txttit"><a href="../index.html">home</a></h5></nav>
         <div class="txtbox">
             <div class="subtit">Responsive UI Renewal Project</div>
             <div class="tit">Parcono</div>
-            <div class="txttit">#웹표준</div>
-            <div class="txttit">#반응형 웹</div>
-            <div class="txttit">#css변수 사용</div>
-            <div class="txttit">#event method</div>
+            <div class="txt">#웹표준</div>
+            <div class="txt">#반응형 웹</div>
+            <div class="txttit">#JavaScript</div>
+            <div class="txttit">#drop down menu</div>
+            <div class="txttit">#roof slide</div>
+            <div class="txttit">#tab menu</div>
             <div class="txttit">#kakao API</div>
         </div>
         <div class="imgbox">
@@ -42,7 +44,7 @@
             </div>
             <div class="box goal">
                 <h5 class="txttit">project goal</h5>
-                <p class="txt">원목 가구를 전문적으로 제작하는 소규모 쇼핑몰이다. <br>'기본에 충실한 가구' 라는 브랜드 아이덴티티와 어울리는 내추럴하고 심플한 이미지로 새롭게 디자인하였고, 사용자가 원하는 제품을 편리하게 찾을 수 있도록 레이아웃을 재구성 하였다.</p>
+                <p class="txt">원목 가구를 전문적으로 제작하는 소규모 쇼핑몰이다. '기본에 충실한 가구' 라는<span>  브랜드 아이덴티티와 어울리는 내추럴하고 심플한 이미지로 새롭게 디자인 하였고, </span> 사용자가 원하는 제품을 편리하게 찾을 수 있도록 레이아웃을 재구성 하였다.</p>
             </div>
             <div class="box layout">
                 <h5 class="txttit">layout</h5>
@@ -121,30 +123,29 @@
             <div class="box problem">
                 <h5 class="txttit">problem & solution</h5>
                 <p class="txt">
-                    <strong>반응형 단위 값, 어떻게 사용해야할까?</strong>
-                    반응형 단위는 막연히 vw와 %로 알고 있었고 %는 변화가 커서 vw를 사용하였다. 하지만 %와 달리 vw는scroll의 너비를 인식하지 못해 레이아웃이 자꾸 틀어졌다. 다행히 문제되는 부분은 해결하였지만 다양한
-                    레이아웃에서 적절한 단위를 쓰기 위해 더 공부를 해야할 것 같다.
+                    <strong>헷갈리는 반응형 단위</strong>
+                    컨텐츠의 단위 값에 %보다 자연스럽게 변화하는 vw를 적용하였다. <span> 하지만 vw는 scroll의 너비를 인식하지 못해 컨텐츠가 아래로 떨어지는 문제가 발생하였고</span>가로: %, 세로: vw를 주어 레이아웃을 지키면서도 부드럽게 움직이는 컨텐츠를 구현했다.<span>  문제되는 부분은 해결하였지만 다양한 레이아웃에서 적절한 단위를 쓰기 위해 공부를 더 해야할 것 같다.</span>
                 </p>
                 <p class="txt">
                     <strong>순수 자바스크립트만으로</strong>
-                    input에 값을 입력하면 label의 컬러가 바뀌는 이벤트를 적용하고 싶었다. forEach의 index속성으로 구현 될 줄 알았으나 작동하지 않았고 전화번호 부분의 input 갯수를 고려하지 않았다는 것을
-                    깨달았다. data-set속성으로 인덱스 값을 주어 다행히 해결되었지만 원하는대로 자바스크립트를 사용하기 위해 더 많은 공부가 필요할 것 같다.
+                    input에 값을 입력하면 label의 컬러가 바뀌는 이벤트를 적용하고 싶었다.<span>forEach의 index속성으로 구현 될 줄 알았으나 작동하지 않았고 전화번호 부분의 input 갯수를</span> 고려하지 않았다는 것을
+                    깨달았다. data-set속성으로 인덱스 값을 주어 다행히 해결되었지만 <span>원하는대로 자바스크립트를 사용하기 위해 더 많은 공부가 필요할 것 같다.</span>
                 </p>
                 </div>
                 <div class="box review">
                     <h5 class="txttit">review</h5>
-                    <p class="txt">리뉴얼 기획부터 디자인, 퍼블리싱, 간단한 기능 구현까지 많은 노력이 들어간 첫 사이트이다. 미디어 쿼리와 반응형 단위 값 사용 등 부족한 부분이 많지만 아직은 보완해야할 문제점들을 파악하는 단계라 생각하고 끈기를 갖고 완성했다는 점에 의의를 두고 싶다.</p>
+                    <p class="txt">리뉴얼 기획부터 디자인, 퍼블리싱, 간단한 기능 구현까지 많은 노력이 들어간 첫 사이트이다.<span>미디어 쿼리와 반응형 단위 값 사용 등 부족한 부분이 많지만 아직은 보완해야할 문제점들을 </span>파악하는 단계라 생각하고 끈기를 갖고 완성했다는 점에 의의를 두고 싶다.</p>
             </div>
         </article>
     </main>
     <footer>
         <h5 class="txttit"><a href="../PJ_parcono/index.html">view site</a></h5>
         <div class="navbox">
-            <h5 class="txttit"><a href="">portfolio</a></h5>
-            <h5 class="txttit"><a href="">next site</a></h5>
+            <h5 class="txttit"><a href="../index.html">home</a></h5>
+            <h5 class="txttit"><a href="../sub/sub_millac.html">next portfolio</a></h5>
         </div>
     </footer>
-<script src="./js/sub_parcono.js"></script>
+<script src="./js/subpage.js"></script>
 <script></script>
 </body>
 </html>

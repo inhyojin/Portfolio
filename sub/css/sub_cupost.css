@@ -1,0 +1,103 @@
+header {
+    position: relative;
+background: #531ADC0D;
+background: -webkit-linear-gradient(top left, #531ADC0D, #1BDE700D);
+background: -moz-linear-gradient(top left, #531ADC0D, #1BDE700D);
+background: linear-gradient(to bottom right, #531ADC0D, #1BDE700D);
+}
+header .txtbox {
+    position: absolute;
+    top: 40%; left: 30%;
+    transform: translate(-30%, -40%);
+    width: 50%;
+}
+header .tit {
+    margin-bottom: 1.8rem;
+}
+header .subtit2 {
+    margin: 2rem 0 1.4rem;
+    font-family: 'pretendard';
+    font-size: 3.4rem;
+    font-weight: 500;
+}
+header .txt {
+    font-size: 2rem;
+    line-height: 1.6;
+}
+header .tag p {font-size: 1.8rem; font-weight: 300;}
+header .tag .txt {
+    font-size: 1.7rem;
+    line-height: 1.3;
+    margin: 11rem 6rem 0 0;
+    display: inline-block;
+}
+
+.asis img {
+    box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.144);
+    border-radius: 5px;
+    width: 150px;
+    margin: 2rem;
+}
+.asis .wrap p {
+    text-align: center; 
+    font-size: 1.5rem;
+    margin-bottom: 7rem;
+}
+.asis li:first-child {
+    display: flex;
+}
+
+
+.tobe img {
+    width: 120rem;
+}
+.sub {
+    justify-content: center;
+}
+.sub .wrap {
+    width: 62.500vw;
+}
+
+.charged .txt {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.evaluation .txt {margin: 0;}
+.evaluation em {text-decoration: underline;}
+.evaluation li {margin-top: 2rem;}
+
+
+footer .viewbox {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer .viewbox > h5 {
+    border: 1px solid #000;
+    transition: .3s;
+}
+footer .viewbox > h5:hover {background-color: #000; color: #fff;}
+
+/* image */
+.mobile img {
+    background-image: url(../images/moc_cu.svg);
+    background-size: 90%;
+    background-position-y: 0;
+    border-radius: 35px;
+}
+.imgbox .mobile {
+    bottom: 28%; right: 23%;
+    width: 13.125vw; 
+}
+
+/* design */
+
+/* colorchip */
+.color .main1 {background-color: #040A2B; color: #fff; }
+.color .sub1 {background-color: #6378D0;color: #fff;  }
+
+/* font */
+.san500 {font-family: 'gothic'; font-weight:500;}
+.san300 {font-family: 'gothic'; font-weight:300;}

@@ -12,6 +12,21 @@
 	font-display: swap;
 	src: url(../font/PretendardVariable.woff2) format('woff2-variations');
 }
+
+@font-face {
+    font-family: 'gothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../../common/font/AppleSDGothicNeoL.woff) format('woff');
+    }
+    
+@font-face {
+font-family: 'gothic';
+font-style: normal;
+font-weight: 500;
+src: url(../../common/font/AppleSDGothicNeoM.woff) format('woff');
+}
+
 @font-face {
     font-family: 'leferi';
     src: url(../font/LeferiBaseRegular.otf) format('opentype');

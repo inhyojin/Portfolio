@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT 2 Report</title>
+    <!-- minireset -->
+    <link rel="stylesheet" href="../common/css/minireset.css">
+    <!-- font -->
+    <link rel="stylesheet" href="../common/css/font.css">
+    <link rel="stylesheet" href="../common/css/custom.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./css/subpage.css">
+    <link rel="stylesheet" href="./css/sub_millac.css">
+</head>
+<body>
+    <a class="goUp" href="#"><img src="./images/goup.svg" alt="위로 가기"></a>
+    <!-- header -->
+    <header>
+        <nav><h5 class="txttit"><a href="../index.html">home</a></h5></nav>
+        <div class="txtbox">
+            <div class="subtit">Responsive UI Renewal Project</div>
+            <div class="tit">millac the market</div>
+            <div class="txttit">#site building</div>
+            <div class="txttit">#gsap</div>
+            <div class="txttit">#css animation</div>
+            <div class="txttit">#horizontal scroll</div>
+
+        </div>
+        <div class="imgbox">
+            <div class="img tablet"><img src="./images/frameT.png" alt=""></div>
+            <div class="img mobile"><img src="./images/frameM.png" alt="mockup"></div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="box period">
+                <h5 class="txttit">period</h5>
+                <p class="txt">2022.07.05 - 2022.07.13</p>
+            </div>
+            <div class="box goal">
+                <h5 class="txttit">project goal</h5>
+                <p class="txt">밀락 더 마켓은 부산에 위치한 광장형 복합 문화 체험 공간으로 바다를 마주한 곳에서 휴식과 공연을 즐길 수 있는 오션 뷰 스탠드가 있어 기존 복합몰에서는 볼 수 없었던 새로운 경험을 할 수 있다. 밀락 더 마켓만의 재미있는 아이덴티티가 있지만 공식 웹 사이트를 운영하고 있지 않아 아쉽다고 생각되어 대중들의 관심을 끌 수 있는 화려하고 개성있는 웹 사이트를 만들고자 하였다.</p>
+            </div>
+            <div class="box layout">
+                <h5 class="txttit">layout</h5>
+                <p class="txt">
+                    <strong>intro</strong>지명에 유래한 이름으로 흥미 유발<br>
+                    <strong>guide</strong>여행을 자극하는 이미지 사용, 공간적 특징을 고려하여 동적인 효과 구현<br>
+                    <strong>program</strong>자동 슬라이드로 공연 및 전시 정보 제공
+                </p>
+            </div>
+            <div class="box design">
+                <h5 class="txttit">design</h5>
+            </div>
+            <div class="subbox">
+                <div class="nullbox">nullbox</div>
+                <div class="box key">
+                    <h5 class="txttit">keyword</h5>
+                    <h5 class="txttit">#interest #beach #sunset</h5>
+                </div>
+                <div class="box color">
+                    <h5 class="txttit">color</h5>
+                    <p class="txt">해질녘의 바다와 노을을 연상시키는 오렌지와 블루 컬러</p>
+                    <div class="chipbox">
+                        <div class="innerbox">
+                            <div class="chip main1">
+                                <p class="txt">#353e4b</p>
+                            </div>
+                            <div class="chip main2">
+                                <p class="txt">#64543f</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box font">
+                    <h5 class="txttit">font</h5>
+                    <div class="chipbox">
+                        <div class="innerbox">
+                            <h5 class="txttit">en</h5>
+                            <p class="txt en700">Montserrat 700</p>
+                            <p class="txt en500">Montserrat 500</p>
+                            <p class="txt en300">Montserrat 300</p>
+                        </div>
+                        <div class="innerbox">
+                            <h5 class="txttit">ko</h5>
+                            <p class="txt pre700">pretendard 700</p>
+                            <p class="txt pre500">pretendard 500</p>
+                            <p class="txt pre400">pretendard 400</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box publishing">
+                <h5 class="txttit">Publishing</h5>
+                <p class="txt">뷰포트 : Pc 1920px / Tablet 1024px / Mobile 768px<br>미디어 쿼리와 가변 단위 값을 이용한 사용자별 환경, 디바이스 제약 해결<br>pc에서의 사용자 접근성을 높이기 위해 일부 요소에 cursor: pointer 적용<br>Mobile퍼스트로 작업하여 mobile에서의 호버문제 해결<br>
+                    GSAP ScrollTrigger & animation을 이용한 다양한 효과 및 동적인 화면 구현<br>
+                    특정 위치에서의 가로스크롤과 text 타이핑 효과 구현<br>  
+                    jQuery / setInterval(); 를 이용한 자동 슬라이드 구현</p>
+            </div>
+                <div class="box review">
+                    <h5 class="txttit">review</h5>
+                    <p class="txt">
+                        <strong>처음 시도한 GSAP 플러그인</strong><br>
+                        작업 시간이 부족하여 꼼꼼하게 기획하지 못한 부분이 아쉽고 화려한 움직임을 만들고자 했지만<span>다양한 옵션에 대한 이해, 자바스크립트를 활용한 사용법에 미숙하여 적용할 수 있는 범위가 제한적이었다. 하지만 새로운 분야를 하나 더 알게 되었고 자바스크립트의 중요성을 다시 느낄 수 있었다.</span><br>
+                        <strong>인터렉티브 웹의 첫걸음</strong><br>
+                        동적인 사이트들을 보면 가로 스크롤을 이용한 페이지가 많이 보였고 position:sticky와 함께 javaScript 코드를 이용하여 작업을 하였다. 하지만 모바일 환경에서는 가로 스크롤이 불편하다고 생각되어 세로로 수정해 보았지만 어려움을 느꼈다. 아쉽지만 공부를 더 하여 다시 시도해 보고 싶다.</span>
+                    </p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <h5 class="txttit"><a href="../PJ_millac/index.html">view site</a></h5>
+        <div class="navbox">
+            <h5 class="txttit"><a href="./sub_parcono.html">prev</a></h5>
+            <h5 class="txttit"><a href="../sub/sub_estee.html">next portfolio</a></h5>
+        </div>
+    </footer>
+<script></script>
+</body>
+</html>

@@ -1,10 +1,20 @@
-// 연락 모달창
+// fullpage
+
+new fullpage("#fullpage", {
+  autoScrolling: true,
+  scrollHorizontally: true,
+  fitToSection: true,
+  continuousVertical: true,
+});
+
+// modal
 const modalBox = document.querySelector(".modal");
 const btn = document.querySelector(".close");
 
 btn.addEventListener("click", (e) => {
   modalBox.style.display = "none";
 });
+
 // 마우스로 이동
 const onMove = (e) => {
   modalBox.style.left = `${e.clientX}px`;
@@ -71,7 +81,6 @@ topBtn.addEventListener("click", (e) => {
 const headerTits = document.querySelectorAll(".intro span");
 const headerTxt = document.querySelector(".intro .txt");
 const nav = document.querySelector("nav");
-
 const moveTop = {
   transform: "translate(0)",
   opacity: "1",
@@ -91,20 +100,6 @@ headerTits.forEach((headerTit, idx) => {
     delay: 800 * idx,
   });
 });
-
-const skills = document.querySelectorAll(".skill h4");
-const fullPage = document.querySelector("body").classList;
-console.log(fullPage);
-
-if (fullPage === `fp-viewing-1`) {
-  skills.forEach((skill, idx) => {
-    skill.animate(moveTop, {
-      duration: 800,
-      fill: "forwards",
-      delay: 800 * idx,
-    });
-  });
-}
 
 // 드래그 방지 x
 $("body").on("selectstart", () => {

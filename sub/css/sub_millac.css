@@ -1,0 +1,28 @@
+
+/* image */
+.tablet img {
+    background-image: url(../images/moc_millacT.png);
+    background-size: 100%;
+    background-position-y: 0;
+    border-radius: 25px;
+}
+.mobile img {
+    background-image: url(../images/moc_millacM.png);
+    background-size: 90%;
+    background-position-y: 0;
+    border-radius: 4rem;
+}
+
+/* design */
+
+/* colorchip */
+.color .main1 {background-color: #5993c2; color: #fff; }
+.color .main2 {background-color: #ffc65c; color: #fff; }
+
+/* font */
+.en700 {font-family: 'Montserrat'; font-weight: 700;}
+.en500 {font-family: 'Montserrat'; font-weight: 500;}
+.en300 {font-family: 'Montserrat'; font-weight: 300;}
+.pre700 {font-weight: 700;}
+.pre500 {font-weight: 500;}
+.pre400 {font-weight: 400;}
