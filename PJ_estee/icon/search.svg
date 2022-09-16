@@ -1,0 +1,10 @@
+<svg id="search" xmlns="http://www.w3.org/2000/svg" width="24.042" height="24.042" viewBox="0 0 24.042 24.042">
+  <g id="타원_1" data-name="타원 1" transform="translate(0 11.314) rotate(-45)" fill="none" stroke="#000" stroke-width="1.5">
+    <circle cx="8" cy="8" r="8" stroke="none"/>
+    <circle cx="8" cy="8" r="7.25" fill="none"/>
+  </g>
+  <g id="사각형_2" data-name="사각형 2" transform="translate(15.556 16.971) rotate(-45)" fill="none" stroke="#000" stroke-width="1">
+    <rect width="2" height="10" rx="1" stroke="none"/>
+    <rect x="0.5" y="0.5" width="1" height="9" rx="0.5" fill="none"/>
+  </g>
+</svg>

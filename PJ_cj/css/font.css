@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'onlyone';
+    font-weight: 300;
+    font-display: swap;
+    src: url(../../common/font/CJ_ONLYONE_Light.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'onlyone';
+    font-weight: 500;
+    font-display: swap;
+    src: url(../../common/font/CJ_ONLYONE_Medium.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'onlyone';
+    font-weight: 700;
+    font-display: swap;
+    src: url(../../common/font/CJ_ONLYONE_Bold.woff2) format('woff2');
+}

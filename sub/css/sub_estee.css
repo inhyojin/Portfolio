@@ -1,0 +1,24 @@
+
+/* image */
+.tablet img {
+    background-image: url(../images/moc_esteeT.jpg);
+    background-size: 100%;
+    background-position-y: 0;
+    border-radius: 25px;
+}
+.mobile img {
+    background-image: url(../images/moc_esteeM.jpg);
+    background-size: 90%;
+    background-position-y: 0;
+    border-radius: 45px;
+}
+
+/* design */
+
+/* colorchip */
+.color .main1 {background-color: #040A2B; color: #fff; }
+.color .sub1 {background-color: #6378D0;color: #fff;  }
+
+/* font */
+.san500 {font-family: 'gothic'; font-weight:500;}
+.san300 {font-family: 'gothic'; font-weight:300;}

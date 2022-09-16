@@ -70,7 +70,7 @@ article > h2 span img {
     text-indent: -9999px;
     width: 100%;
     height: 147.949vw;
-    background: url(../images/main_m.png)no-repeat 50% / cover;
+    background: url(../images/main_m.jpg)no-repeat 50% / cover;
 }
 .intro .box {
     box-sizing: border-box;
@@ -251,7 +251,7 @@ article > h2 span img {
 }
 .page2 {
     text-indent: -9999px;
-    background: url(../images/view1.png)no-repeat 50% / cover;
+    background: url(../images/view1.jpg)no-repeat 50% / cover;
 }
 .page3 {
     position: relative;

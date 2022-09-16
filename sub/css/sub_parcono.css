@@ -1,13 +1,13 @@
 
 /* image */
 .tablet img {
-    background-image: url(../images/moc_parconoT.png);
+    background-image: url(../images/moc_parconoT.jpg);
     background-size: 100%;
     background-position-y: 0;
     border-radius: 25px;
 }
 .mobile img {
-    background-image: url(../images/moc_parconoM.png);
+    background-image: url(../images/moc_parconoM.jpg);
     background-size: 90%;
     background-position-y: 0;
     border-radius: 45px;

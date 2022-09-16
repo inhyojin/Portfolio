@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+KR:wght@300;400&family=Tiro+Bangla&display=swap');
+
+body {font-family: 'Noto Sans KR', sans-serif; line-height: 1.7;}
+.en {font-family: 'Tiro Bangla', serif;}
+.en_1 {font-family: 'Montserrat', sans-serif;}
+
+/* header */
+header {
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    height: 100px;
+    line-height: 100px;
+    color: #fff;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 100;
+}
+header .menu_open {
+    display: inline-block;
+    width: 40px; height: 16px;
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+}
+header span {
+    display: block;
+    width: 100%; height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+header .top {top: 0;}
+header .mid {top: 50%; transform: translateY(-50%);}
+header .bot {bottom: 0;}
+
+header .book {
+    float: left;
+    margin: 0 140px 0 80px;
+}
+
+header .langs {
+    width: 140px;
+    float: left;
+}
+header .langs li {
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+header .langs li a {
+    display: block;
+}
+header .langs li:nth-child(1) {
+    font-weight: bold;
+}
+header .langs li:nth-child(2) {
+    color: #ddd;
+}
+
+header .right {
+    float: right;
+}
+header .right li {
+    float: left;
+}
+header .right a {
+    display: block;
+    width: 130px; height: 100px;
+    position: relative;
+    margin-left: 30px;
+}
+header .right img {
+    position: absolute;
+    left: 0;
+    top: 50%; transform: translateY(-50%);
+}
+header .right img:nth-child(2) {
+    opacity: 0;
+}
+
+/* visual */
+.visual img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.visual .swiper-slide.swiper-slide-active {
+    animation: scale_ani 6s;
+}
+@keyframes scale_ani {
+    0% {
+        transform: scale(1.1);
+    }
+}
+.visual {
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+}
+.slide {
+    position: relative;
+}
+.slide .main_text {
+    font-size: 3rem;
+    top: 25%; right: 25%;
+    position: absolute;
+}
+.visual .swiper-slide.swiper-slide-active .main_text > span {
+    animation: tit_ani 2s;
+}
+@keyframes tit_ani {
+    0% {opacity: 0;}
+}
+.slide .main_text p {
+    font-size: 1.4rem;
+    letter-spacing: -0.2px;
+    font-weight: 300;
+    margin: 20px 0 30px;
+}
+.visual .swiper-slide.swiper-slide-active .main_text p {
+    animation: txt_ani 3s;
+}
+@keyframes txt_ani {
+    0% {opacity: 0;}
+    40% {opacity: 0; transform: translateY(10px);}
+}
+.slide .main_text .num {
+    font-size: 2rem;
+    position: relative;
+}
+.slide .main_text .num span {
+    position: absolute;
+    opacity: 0;
+}
+.visual .swiper-slide.swiper-slide-active .main_text .num span {
+    animation: num_ani 6s infinite;
+}
+@keyframes num_ani {
+    0% {opacity: 0; transform: translateY(10px);}
+    30% {opacity: 1; transform: translateY(0);}
+    70% {opacity: 1; transform: translateY(0);}
+    100% {opacity: 0; transform: translateY(-10px);}
+}
+
+/* bottom menu */
+.visual .menu {
+    position: absolute;
+    bottom: 10%; left: 10%;
+    font-size: 1.3rem;
+    overflow: hidden;
+    padding-bottom: 16px;
+    z-index: 10;
+}
+.visual .menu:after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; 
+    width: 100%; height: 4px;
+    background-color: #fff;
+    animation: bar 4.5s infinite;
+}
+@keyframes bar {
+    0% {width: 0;}
+}
+.visual .menu li {
+    margin-right: 30px;
+    float: left;
+}
+.visual .menu li:nth-child(2) {
+    margin-right: 60px;
+}
+.visual .menu i {
+    margin-right: 10px;
+}
+
+/* intro */
+.intro {
+    width: 100%;
+    height: 1600px;
+}
+.intro .intro_inner {
+    margin: 0 auto;
+    width: 82%;
+}
+
+.intro_inner > p {
+    font-size: 2rem;
+    margin: 120px 0 160px;
+}
+/* tab menu */
+.intro_inner .tab_menu {
+    display: flex;
+    text-transform: uppercase;
+}
+.intro_inner .tab_menu li:first-child {
+    margin-right: 20px;
+}
+
+/* tab */
+.intro .tab_content {
+    margin-top: 40px;
+    width: 100%; height: 800px;
+    position: relative;
+}
+.intro .tab_box {
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    display: none;
+}
+
+.tab_box .img_wrap {
+    width: 60%; height: 800px;
+} 
+.tab_box .img_wrap img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+}
+.swiper-horizontal > .swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    width: 60%;
+    left: 0;
+}
+.swiper-scrollbar-drag {
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.tab_box .txt_wrap {
+    z-index: 9;
+    position: absolute;
+    top: 0; right: 0;
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.tab_box .txt_wrap:nth-child(1) {z-index: 30;}
+.tab_box .txt_wrap:nth-child(2) {z-index: 20;}
+.tab_box .txt_wrap:nth-child(3) {z-index: 10;}
+
+.tab_box .txt_wrap h2 {
+    margin-top: 140px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.tab_box .txt_wrap h2 + p {
+    margin: 20px 0 100px;
+}
+.tab_box .txt_wrap .caption span {
+    color: rgb(187, 158, 62);
+
+}
+.tab_box .txt_wrap .caption li {
+    margin-bottom: 40px;
+}
+.tab_box .txt_wrap .caption li:last-child {
+    margin-bottom: 0;
+}
+
+/* tab active */
+.intro .tab_box.on {
+    display: block;
+}
+.tab_menu li.on {
+    color: rgb(187, 158, 62);
+}

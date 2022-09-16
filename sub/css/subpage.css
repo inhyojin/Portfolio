@@ -5,6 +5,7 @@ body {
     font-family: 'samsungsharp';
 }
 img {width: 100%;}
+.txt {font-family: 'pretendard';}
 .txt span {display: block;}
 
 .goUp {
@@ -15,41 +16,14 @@ img {width: 100%;}
 }
 .goUp.invert img {filter: invert(1); transition: .3s;}
 
+/* header */
 header {
     height: 105vh;
     margin-bottom: 10vw;
-background: #EFECEB;
-background: -webkit-linear-gradient(top, #EFECEB, #E2E0E2);
-background: -moz-linear-gradient(top, #EFECEB, #E2E0E2);
-background: linear-gradient(to bottom, #EFECEB, #E2E0E2);
-}
-
-nav {
-    position: absolute; top: 40px; right: 80px;
-    transition: .3s;
-}
-nav:hover {transform: scale(1.2);}
-.txt {font-family: 'pretendard';}
-
-.txtbox {
-    box-sizing: border-box;
-    padding: 25px 80px;
-    width: 100%;
-}
-.txtbox div:nth-child(3) {margin-top: 10px;}
-.txtbox .br {
-    margin-top: 20px;
-}
-.imgbox > div {
-    position: absolute;
-}
-.imgbox .tablet {
-    bottom: 10%; right:27%;
-    width: 50vw;
-}
-.imgbox .mobile {
-    bottom: 10%; right: 12%;
-    width: 13.125vw; 
+    background: #EFECEB;
+    background: -webkit-linear-gradient(top, #EFECEB, #E2E0E2);
+    background: -moz-linear-gradient(top, #EFECEB, #E2E0E2);
+    background: linear-gradient(to bottom, #EFECEB, #E2E0E2);
 }
 header img {
     background: no-repeat;
@@ -63,10 +37,32 @@ header img {
     10.7px 8.9px 13.4px rgba(0, 0, 0, 0.086),
     20.1px 16.7px 25.1px rgba(0, 0, 0, 0.079),
     48px 40px 60px rgba(0, 0, 0, 0.07);
-
 }
 
+nav {
+    position: absolute; top: 40px; right: 80px;
+    transition: .3s;
+}
+nav:hover {transform: scale(1.2);}
 
+header .txtbox {
+    box-sizing: border-box;
+    padding: 25px 80px;
+    width: 100%;
+}
+.imgbox > div {
+    position: absolute;
+}
+.imgbox .tablet {
+    bottom: 10%; right:27%;
+    width: 50vw;
+}
+.imgbox .mobile {
+    bottom: 10%; right: 12%;
+    width: 13.125vw; 
+}
+
+/* main */
 .box {
     box-sizing: border-box;
     padding: 2% 4%;
@@ -80,11 +76,11 @@ article > .box h5 {
 article > .box > .txt {
     width: 40%;
 }
+.layout strong {margin-right: 10px;}
 
-
-.layout strong {margin-right: 18px;}
-
+/* design */
 .box.design {border-bottom: var(--border-sub);}
+
 .subbox {
     width: 100%;
     display: grid;
@@ -123,6 +119,7 @@ article > .box > .txt {
     border-top: none;
 }
 
+/* problem */
 .problem {
     display: grid;
     grid-template-columns: 50% 40%;
@@ -130,16 +127,18 @@ article > .box > .txt {
 .problem h5 {
     grid-row: span 2;
 }
-article .problem h5.txttit,
-article .problem p.txt {
-    width: 100%;
+.problem .txtbx {
     margin-bottom: 2vw;
+}
+.problem .txt {
+    width: 100%;
+    margin-bottom: 0.5vw;
 } 
-
 .problem strong {
     display: block;
 }
 
+/* footer */
 footer {
     margin-top: 140px;
     padding: 80px;

@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+:root {
+    font-size: 95%;
+    --font-txt: 22px;
+}
+
+/******* nav *******/
+
+nav {
+    padding: 0 10.417vw;
+    height: 84px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+/** toggle **/
+nav .toggle {
+    display: none;
+}
+
+/** gnb(pc) **/
+nav .gnb {
+    position: static;
+    justify-content: center;
+    width: 60%;
+    transform: translateX(0);
+    display: flex;
+    margin: 0 auto;
+}
+nav .gnb::before {
+    display: none;
+}
+nav .gnb .close {
+    display: none;
+}
+nav .gnb li a {
+    font-size: var(--font-prd-enname);
+    display: block;
+    font-weight: var(--weight-medi);
+    height: 84px; line-height: 84px;
+    text-align: center;
+    padding: 0 0.781vw;
+}
+
+/** registry(pc) **/
+nav .util {
+    display: flex;
+    margin-right: 10px;
+}
+nav .util a {
+    display: block;
+    padding: 0 10px;
+    position: relative;
+}
+nav .util li:first-child a::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right: 0; top: 0;
+    background-color: var(--color-main);
+}
+
+/******* header *******/
+header {
+    margin-top: 84px;
+    flex-direction: row;
+    position: relative;
+    height: 800px;
+}
+/** swiper **/
+header .swiper-slide {
+    height: 800px;
+}
+header .txtbox {
+    width: 550px;
+    right: 20.750vw;
+    
+}
+/******* main *******/
+/** best **/
+main > article {
+    padding: 0 12%;
+    margin-top: 200px;
+}
+.prd_name {
+    margin: 40px 0 12px;
+}
+.prd_price {
+    margin: 30px 0 100px;
+}
+/** with **/
+.with .photo_block > div {
+    overflow: hidden;
+    width: 13.625vw; height: 13.625vw;
+}
+
+/** service **/
+.service .txtbox {
+    padding-left: 60px;
+}
+.service .txt {
+    margin: 40px 0;
+}
+
+/** story **/
+.story .txtbox {
+    padding: 4.167vw;
+}
+
+/** insta **/
+.insta .img_holder:nth-child(3) ~ div {
+    display: grid;
+}
+.insta .photo_block {
+    height: 23.958vw;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.insta .img_holder:nth-child(3) {
+    order: 5;
+}
+.insta .img_holder:nth-child(6) {
+    order: 6;
+}
+.insta .img_holder:nth-child(4) {
+    grid-column: span 2;
+    grid-row: span 2;
+}

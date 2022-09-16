@@ -20,22 +20,23 @@
     <!-- header -->
     <header>
         <nav><h5 class="txttit"><a href="../index.html">home</a></h5></nav>
-        <div class="txtbox">
-            <div class="subtit">Responsive UI Renewal Project</div>
-            <div class="tit">Parcono</div>
-            <div class="txt">#웹표준</div>
-            <div class="txt">#반응형 웹</div>
-            <div class="txttit">#JavaScript</div>
-            <div class="txttit">#drop down menu</div>
-            <div class="txttit">#roof slide</div>
-            <div class="txttit">#tab menu</div>
-            <div class="txttit">#kakao API</div>
-        </div>
+        <ul class="txtbox">
+            <li class="subtit">Responsive UI Renewal Project</li>
+            <li class="tit">Parcono</li>
+            <li class="txt">#웹표준</li>
+            <li class="txt">#반응형 웹</li>
+            <li class="txttit">#JavaScript</li>
+            <li class="txttit">#drop down menu</li>
+            <li class="txttit">#roof slide</li>
+            <li class="txttit">#tab menu</li>
+            <li class="txttit">#kakao API</li>
+        </ul>
         <div class="imgbox">
-            <div class="img tablet"><img src="./images/frameT.png" alt=""></div>
-            <div class="img mobile"><img src="./images/frameM.png" alt="mockup"></div>
+            <div class="img tablet"><img src="./images/frameT.jpg" alt="tablet frame mockup"></div>
+            <div class="img mobile"><img src="./images/frameM.jpg" alt="mobile frame mockup"></div>
         </div>
     </header>
+    <!-- main -->
     <main>
         <article>
             <div class="box period">
@@ -48,12 +49,13 @@
             </div>
             <div class="box layout">
                 <h5 class="txttit">layout</h5>
-                <p class="txt">
-                    <strong>header</strong>아이덴티티를 강조하는 문구 추가<br>
-                    <strong>intro</strong>서브 성격의 채용 공고, 쇼룸안내 섹션을 하단으로 분리하고 소개 영역 확장<br>
-                    <strong>product</strong>위치(주방, 거실, 침실, 기타) 종류별로 제품을 볼 수 있도록 목록 추가<br>
-                    <strong>gallery</strong>재료 선별, 기술력, 노하우 등 브랜드 전문성 강조<br>
-                    <strong>contact</strong>제작주문 상담 섹션 추가</p>
+                <ul class="txt">
+                    <li><strong>header</strong>아이덴티티를 강조하는 문구 추가</li>
+                    <li><strong>intro</strong>서브 성격의 채용 공고, 쇼룸안내 섹션을 하단으로 분리하고 소개 영역 확장</li>
+                    <li><strong>product</strong>위치(주방, 거실, 침실, 기타) 종류별로 제품을 볼 수 있도록 목록 추가</li>
+                    <li><strong>gallery</strong>재료 선별, 기술력, 노하우 등 브랜드 전문성 강조</li>
+                    <li><strong>contact</strong>제작주문 상담 섹션 추가</li>
+                </ul>
             </div>
             <div class="box design">
                 <h5 class="txttit">design</h5>
@@ -113,36 +115,42 @@
             </div>
             <div class="box publishing">
                 <h5 class="txttit">Publishing</h5>
-                <p class="txt">뷰포트 : Pc 1920px / Tablet 1440px / Mobile 768px<br>
-                    flex와 grid를 이용한 웹페이지 레이아웃 제작/제어<br>
-                    pc에서의 사용자 접근성을 높이기 위한 마우스 오버 : hover 적용<br>
-                    카카오맵 API를 이용한 지도 구현<br>
-                    javascript를 이용한 배너 슬라이드, 탭 메뉴 구현<br>
-                    javascript를 이용한 모바일 DrowDown Menu 구현</p>
+                <ul class="txt">
+                    <li>뷰포트 : Pc 1920px / Tablet 1440px / Mobile 768px</li>
+                    <li>flex와 grid를 이용한 웹페이지 레이아웃 제작/제어</li>
+                    <li>pc에서의 사용자 접근성을 높이기 위한 마우스 오버 : hover 적용</li>
+                    <li>카카오맵 API를 이용한 지도 구현</li>
+                    <li>javascript를 이용한 배너 슬라이드, 탭 메뉴 구현</li>
+                    <li>javascript를 이용한 모바일 DrowDown Menu 구현</li>
+                </ul>
             </div>
             <div class="box problem">
                 <h5 class="txttit">problem & solution</h5>
-                <p class="txt">
-                    <strong>헷갈리는 반응형 단위</strong>
+                <div class="txtbx">
+                    <p class="txt"><strong>헷갈리는 반응형 단위</strong></p>
+                    <p class="txt">
                     컨텐츠의 단위 값에 %보다 자연스럽게 변화하는 vw를 적용하였다. <span> 하지만 vw는 scroll의 너비를 인식하지 못해 컨텐츠가 아래로 떨어지는 문제가 발생하였고</span>가로: %, 세로: vw를 주어 레이아웃을 지키면서도 부드럽게 움직이는 컨텐츠를 구현했다.<span>  문제되는 부분은 해결하였지만 다양한 레이아웃에서 적절한 단위를 쓰기 위해 공부를 더 해야할 것 같다.</span>
-                </p>
-                <p class="txt">
-                    <strong>순수 자바스크립트만으로</strong>
-                    input에 값을 입력하면 label의 컬러가 바뀌는 이벤트를 적용하고 싶었다.<span>forEach의 index속성으로 구현 될 줄 알았으나 작동하지 않았고 전화번호 부분의 input 갯수를</span> 고려하지 않았다는 것을
-                    깨달았다. data-set속성으로 인덱스 값을 주어 다행히 해결되었지만 <span>원하는대로 자바스크립트를 사용하기 위해 더 많은 공부가 필요할 것 같다.</span>
-                </p>
+                    </p>
                 </div>
-                <div class="box review">
-                    <h5 class="txttit">review</h5>
+                <div class="txtbx">
+                    <p class="txt"><strong>순수 자바스크립트만으로</strong></p>
+                    <p class="txt">input에 값을 입력하면 label의 컬러가 바뀌는 이벤트를 적용하고 싶었다.<span>forEach의 index속성으로 구현 될 줄 알았으나 작동하지 않았고 전화번호 부분의 input 갯수를</span> 고려하지 않았다는 것을 깨달았다. data-set속성으로 인덱스 값을 주어 다행히 해결되었지만 <span>원하는대로 자바스크립트를 사용하기 위해 더 많은 공부가 필요할 것 같다.</span>
+                    </p>    
+                </div>
+            </div>
+            <div class="box review">
+                <h5 class="txttit">review</h5>
+                <div class="txtbx">
                     <p class="txt">리뉴얼 기획부터 디자인, 퍼블리싱, 간단한 기능 구현까지 많은 노력이 들어간 첫 사이트이다.<span>미디어 쿼리와 반응형 단위 값 사용 등 부족한 부분이 많지만 아직은 보완해야할 문제점들을 </span>파악하는 단계라 생각하고 끈기를 갖고 완성했다는 점에 의의를 두고 싶다.</p>
+                </div>
             </div>
         </article>
     </main>
     <footer>
-        <h5 class="txttit"><a href="../PJ_parcono/index.html">view site</a></h5>
+        <h5 class="txttit"><a target="_blank" href="../PJ_parcono/index.html">view site</a></h5>
         <div class="navbox">
             <h5 class="txttit"><a href="../index.html">home</a></h5>
-            <h5 class="txttit"><a href="../sub/sub_millac.html">next portfolio</a></h5>
+            <h5 class="txttit"><a href="./sub_millac.html">next portfolio</a></h5>
         </div>
     </footer>
 <script src="./js/subpage.js"></script>

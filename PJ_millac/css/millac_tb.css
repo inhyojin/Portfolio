@@ -14,7 +14,7 @@ h3 {
 .page3 span {display: inline;}
 .intro .img {
     height: 70vw;
-    background: url(../images/main.png)no-repeat 50% / cover;
+    background: url(../images/main.jpg)no-repeat 50% / cover;
 }
 h3 {font-size: 3.7rem;}
 .intro .txt {display: none;}

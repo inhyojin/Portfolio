@@ -1,13 +1,13 @@
 
 /* image */
 .tablet img {
-    background-image: url(../images/moc_millacT.png);
+    background-image: url(../images/moc_millacT.jpg);
     background-size: 100%;
     background-position-y: 0;
     border-radius: 25px;
 }
 .mobile img {
-    background-image: url(../images/moc_millacM.png);
+    background-image: url(../images/moc_millacM.jpg);
     background-size: 90%;
     background-position-y: 0;
     border-radius: 4rem;

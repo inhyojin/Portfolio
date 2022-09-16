@@ -19,20 +19,21 @@
     <!-- header -->
     <header>
         <nav><h5 class="txttit"><a href="../index.html">home</a></h5></nav>
-        <div class="txtbox">
-            <div class="subtit">Responsive UI Renewal Project</div>
-            <div class="tit">millac the market</div>
-            <div class="txttit">#site building</div>
-            <div class="txttit">#gsap</div>
-            <div class="txttit">#css animation</div>
-            <div class="txttit">#horizontal scroll</div>
+        <ul class="txtbox">
+            <li class="subtit">Responsive UI Renewal Project</li>
+            <li class="tit">millac the market</li>
+            <li class="txttit">#site building</li>
+            <li class="txttit">#gsap</li>
+            <li class="txttit">#css animation</li>
+            <li class="txttit">#horizontal scroll</li>
 
-        </div>
+        </ul>
         <div class="imgbox">
-            <div class="img tablet"><img src="./images/frameT.png" alt=""></div>
-            <div class="img mobile"><img src="./images/frameM.png" alt="mockup"></div>
+            <div class="img tablet"><img src="./images/frameT.jpg" alt="tablet frame mockup"></div>
+            <div class="img mobile"><img src="./images/frameM.jpg" alt="mobile frame mockup"></div>
         </div>
     </header>
+    <!-- main -->
     <main>
         <article>
             <div class="box period">
@@ -45,11 +46,11 @@
             </div>
             <div class="box layout">
                 <h5 class="txttit">layout</h5>
-                <p class="txt">
-                    <strong>intro</strong>지명에 유래한 이름으로 흥미 유발<br>
-                    <strong>guide</strong>여행을 자극하는 이미지 사용, 공간적 특징을 고려하여 동적인 효과 구현<br>
-                    <strong>program</strong>자동 슬라이드로 공연 및 전시 정보 제공
-                </p>
+                <ul class="txt">
+                    <li><strong>intro</strong>지명에 유래한 이름으로 흥미 유발</li>
+                    <li><strong>guide</strong>여행을 자극하는 이미지 사용, 공간적 특징을 고려하여 동적인 효과 구현</li>
+                    <li><strong>program</strong>자동 슬라이드로 공연 및 전시 정보 제공</li>
+                </ul>
             </div>
             <div class="box design">
                 <h5 class="txttit">design</h5>
@@ -94,29 +95,41 @@
             </div>
             <div class="box publishing">
                 <h5 class="txttit">Publishing</h5>
-                <p class="txt">뷰포트 : Pc 1920px / Tablet 1024px / Mobile 768px<br>미디어 쿼리와 가변 단위 값을 이용한 사용자별 환경, 디바이스 제약 해결<br>pc에서의 사용자 접근성을 높이기 위해 일부 요소에 cursor: pointer 적용<br>Mobile퍼스트로 작업하여 mobile에서의 호버문제 해결<br>
-                    GSAP ScrollTrigger & animation을 이용한 다양한 효과 및 동적인 화면 구현<br>
-                    특정 위치에서의 가로스크롤과 text 타이핑 효과 구현<br>  
-                    jQuery / setInterval(); 를 이용한 자동 슬라이드 구현</p>
+                <ul class="txt">
+                    <li>뷰포트 : Pc 1920px / Tablet 1024px / Mobile 768px</li>
+                    <li>미디어 쿼리와 가변 단위 값을 이용한 사용자별 환경, 디바이스 제약 해결</li>
+                    <li>pc에서의 사용자 접근성을 높이기 위해 일부 요소에 cursor: pointer 적용</li>Mobile퍼스트로 작업하여 mobile에서의 호버문제 해결
+                    <li>
+                    GSAP ScrollTrigger & animation을 이용한 다양한 효과 및 동적인 화면 구현</li>
+                    <li>특정 위치에서의 가로스크롤과 text 타이핑 효과 구현</li>
+                    <li>jQuery / setInterval(); 를 이용한 자동 슬라이드 구현</li>
+                </ul>
             </div>
-                <div class="box review">
-                    <h5 class="txttit">review</h5>
+            <div class="box problem">
+                <h5 class="txttit">review</h5>
+                <div class="txtbx">
+                    <p class="txt"><strong>처음 시도한 GSAP 플러그인</strong></p>
                     <p class="txt">
-                        <strong>처음 시도한 GSAP 플러그인</strong><br>
-                        작업 시간이 부족하여 꼼꼼하게 기획하지 못한 부분이 아쉽고 화려한 움직임을 만들고자 했지만<span>다양한 옵션에 대한 이해, 자바스크립트를 활용한 사용법에 미숙하여 적용할 수 있는 범위가 제한적이었다. 하지만 새로운 분야를 하나 더 알게 되었고 자바스크립트의 중요성을 다시 느낄 수 있었다.</span><br>
-                        <strong>인터렉티브 웹의 첫걸음</strong><br>
-                        동적인 사이트들을 보면 가로 스크롤을 이용한 페이지가 많이 보였고 position:sticky와 함께 javaScript 코드를 이용하여 작업을 하였다. 하지만 모바일 환경에서는 가로 스크롤이 불편하다고 생각되어 세로로 수정해 보았지만 어려움을 느꼈다. 아쉽지만 공부를 더 하여 다시 시도해 보고 싶다.</span>
+                    작업 시간이 부족하여 꼼꼼하게 기획하지 못한 부분이 아쉽고 화려한 움직임을 만들고자 했지만<span>다양한 옵션에 대한 이해, 자바스크립트를 활용한 사용법에 미숙하여 적용할 수 있는 범위가 제한적이었다. 하지만 새로운 분야를 하나 더 알게 되었고 자바스크립트의 중요성을 다시 느낄 수 있었다.</span>
                     </p>
+                </div>
+                <div class="txtbx">
+                    <p class="txt"><strong>인터렉티브 웹의 첫걸음</strong></p>
+                    <p class="txt">
+                    동적인 사이트들을 보면 가로 스크롤을 이용한 페이지가 많이 보였고 position:sticky와 함께 javaScript 코드를 이용하여 작업을 하였다. 하지만 모바일 환경에서는 가로 스크롤이 불편하다고 생각되어 세로로 수정해 보았지만 어려움을 느꼈다. 아쉽지만 공부를 더 하여 다시 시도해 보고 싶다.</span>
+                    </p>
+                </div>
             </div>
         </article>
     </main>
     <footer>
-        <h5 class="txttit"><a href="../PJ_millac/index.html">view site</a></h5>
+        <h5 class="txttit"><a target="_blank" href="../PJ_millac/index.html">view site</a></h5>
         <div class="navbox">
             <h5 class="txttit"><a href="./sub_parcono.html">prev</a></h5>
-            <h5 class="txttit"><a href="../sub/sub_estee.html">next portfolio</a></h5>
+            <h5 class="txttit"><a href="./sub_estee.html">next portfolio</a></h5>
         </div>
     </footer>
-<script></script>
+<script>
+</script>
 </body>
 </html>

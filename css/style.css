@@ -339,6 +339,7 @@ nav.color4 {background-color: #91A38A;}
     width: 100%;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 #work2 .txtbox {
     width: 50%;
