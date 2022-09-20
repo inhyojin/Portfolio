@@ -19,7 +19,7 @@ $(function () {
     },
     observer: true,
     observeParents: true,
-    /* active된 slide의 index랑 같은 txtwrap index 활성화 */
+    /* active된 slide의 index와 같은 txtwrap 활성화 */
     on: {
       slideChange: function () {
         const $txtWrap = $(".tab_box.on .txt_wrap");
@@ -28,6 +28,15 @@ $(function () {
           display: "block",
         });
       },
+    },
+  });
+
+  // brand swiper
+  var swiper = new Swiper(".brandSwiper", {
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+      autoplayDisableOnInteraction: false,
     },
   });
 

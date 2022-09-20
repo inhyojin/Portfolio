@@ -31,6 +31,11 @@
 }
 #contact p span {display: inline;}
 
+/* location */
+#location #map {
+    height: 40.385vw;
+}
+
 @media screen and (min-width: 820px){
     #menu {
         width: 95%;

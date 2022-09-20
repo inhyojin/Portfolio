@@ -435,8 +435,9 @@ article#about {
 }
 /* location */
 #location #map {
-    width: 95%;
-    height: 85.385vw;
+    margin: 0 auto;
+    width: 85%;
+    height: 88.385vw;
 }
 #location .info {
     display: flex;
