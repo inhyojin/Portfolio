@@ -79,7 +79,7 @@ nav .gnb li a {
 }
 
 nav.invert {background-color: #fff;}
-nav.invert .logo {filter: invert(0);}
+nav.invert .logo {filter: invert(1);}
 nav.invert .gnb_m span {background-color: #000;}
 nav.invert .gnb a, nav.invert .util a {color: #000;}
 
