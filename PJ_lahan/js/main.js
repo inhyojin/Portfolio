@@ -1,12 +1,10 @@
 $(function () {
-  // main swiper
   var swiper = new Swiper(".main_swiper", {
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
     },
   });
-  // intro swiper
   var swiper = new Swiper(".intro_swiper", {
     autoplay: {
       delay: 2000,
@@ -19,7 +17,6 @@ $(function () {
     },
     observer: true,
     observeParents: true,
-    /* active된 slide의 index와 같은 txtwrap 활성화 */
     on: {
       slideChange: function () {
         const $txtWrap = $(".tab_box.on .txt_wrap");
@@ -31,7 +28,6 @@ $(function () {
     },
   });
 
-  // brand swiper
   var swiper = new Swiper(".brandSwiper", {
     autoplay: {
       delay: 4000,
@@ -40,7 +36,6 @@ $(function () {
     },
   });
 
-  // tab
   const $tabMenu = $(".intro .tab_menu li"),
     $tabBox = $(".intro .tab_box");
 
@@ -54,7 +49,6 @@ $(function () {
     $tabBox.eq(idx).addClass("on");
   });
 
-  // aos
   AOS.init({
     offset: 200,
     easing: "ease-out-cubic",
