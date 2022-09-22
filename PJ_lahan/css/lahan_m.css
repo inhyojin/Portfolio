@@ -295,6 +295,7 @@ header .right img:nth-child(2) {
     text-transform: capitalize;
 }
 .offer .new {
+    margin-top: 30px;
     display: flex;
 }
 .offer .new li {
@@ -307,14 +308,19 @@ header .right img:nth-child(2) {
 .offer .new .img_wrap {
     width: 100%;
     height: 10.416vw;
+    overflow: hidden;
 }
 .offer .new .img_wrap a {
     display: block;
 }
-.offer .new .img {
+.offer .new img {
     width: 100%; height: 100%;
     object-fit: cover;
     object-position: 50%;
+    transition: .5s;
+}
+.offer .new img:hover {
+    transform: scale(1.1);
 }
 .offer .new span {
     display: inline-block;
@@ -332,12 +338,27 @@ header .right img:nth-child(2) {
     letter-spacing: -0.5px;
     color: rgb(116, 91, 53);
 }
-.offer .new a {
+/* btn common (offer, notice) - a.more */
+a.more {
     display: inline-block;
     margin-top: 80px;
     color: rgb(187, 158, 62);
     font-weight: lighter;
     font-size: 15px;
+    text-transform: capitalize;
+    position: relative;
+}
+a.more:after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(187, 158, 62);
+    transition: .5s;
+}
+a.more:hover:after {
+    width: 100%;
 }
 
 /* brand */
@@ -377,7 +398,7 @@ header .right img:nth-child(2) {
     font-weight: 300;
     margin: 30px 0 40px;
 }
-/* .txt_wrap common - button, span */
+/* .txt_wrap common (welcome,brand) - button */
 .txt_wrap a {
     display: block;
     width: 160px;
@@ -390,7 +411,7 @@ header .right img:nth-child(2) {
     color: rgb(65, 65, 65);
     letter-spacing: 0.5px;
 }
-.txt_wrap span {
+.brand .left .swiper-slide .txt_wrap p span {
     display: block;
 }
 .swiper-slide.swiper-slide-active .txt_wrap h3{
@@ -457,4 +478,158 @@ header .right img:nth-child(2) {
     background-color: transparent;
     border: 1px solid rgb(184, 144, 107);
     color: rgb(184, 144, 107);
+}
+
+/* notice */
+.notice {
+    height: 350px;
+    display: flex;
+    border-top: 1px solid #b4b4b4;
+}
+.notice .left {
+    position: relative;
+    width: 7.8125%;
+    border-right: 1px solid #b4b4b4;
+}
+.notice .left h4 {
+    font-size: 19px;
+    width: 100%;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    text-align: center;
+}
+.notice .left h4 a {
+    display: block;
+    font-size: 13px;
+    color: rgb(184, 144, 107);
+}
+.notice .right {
+    width: 100%;
+}
+.notice .right .list_wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.notice .right li {
+    width: 33.3333%;
+    position: relative;
+    cursor: pointer;
+}
+.notice .right li .date {
+    position: absolute;
+    top: 40px; right: 130px;
+    font-size: 26px;
+    color: rgb(20, 20, 46);
+}
+.notice .right li p {
+    font-size: 22px;
+    margin-top: 120px;
+}
+.notice .right li:hover a.more:after {
+    width: 100%;
+}
+
+/* membership */
+.membership {
+    height: 600px;
+    background: url(../images/membership.jpg) no-repeat fixed 50% / cover;
+    position: relative;
+}
+.membership .txt_wrap {
+    color: #fff;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+.membership .txt_wrap h4 {
+    text-transform: capitalize;
+    font-size: 38px;
+    letter-spacing: 0.5px;
+}
+.membership .txt_wrap h4 span {
+    text-transform: uppercase;
+}
+.membership .txt_wrap a {
+    margin: 42px auto;
+    color: #fff;
+}
+
+/* footer */
+footer {
+    box-sizing: border-box;
+    padding: 4% 6%;
+    color: #fff;
+    background-color: #1d212a;
+    display: flex;
+    position: relative;
+}
+footer .logo img {
+    width: 60%;
+}
+footer .info .reserve {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #d8c2b2;
+}
+footer .info .reserve .tel {
+    position: relative;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+footer .info .reserve .tel span {
+    position: absolute;
+    top: 0;
+    text-transform: uppercase;
+}
+footer .info .reserve .tel p {
+    margin-left: 16px;
+}
+footer .kisa {
+    opacity: .5;
+    display: flex;
+    font-size: 13px;
+    font-weight: lighter;
+}
+footer .kisa .img_wrap {
+    margin-right: 10px;
+}
+footer .terms {
+    font-size: 15px;
+    width: 40%;
+    margin: 0 3% 0 3%;
+    display: flex;
+    justify-content: space-around;
+}
+footer .terms li a {
+    display: block;
+}
+footer .icon {
+    margin-right: 0;
+    margin-left: auto;
+}
+footer .icon a {
+    margin-left: 10px;
+}
+footer .fa-facebook,
+footer .fa-instagram {
+    font-size: 30px;
+}
+footer select {
+    cursor: pointer;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 15%; right: 5%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.185);
+    background: url(../images/footer_bot.svg) no-repeat 90% / 13%;
+    appearance: none;
+}
+footer select option {
+    color: #000;
+    padding: 20px;
 }
