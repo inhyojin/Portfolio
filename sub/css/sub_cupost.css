@@ -68,17 +68,13 @@ header .tag .txt {
 .evaluation li {margin-top: 2rem;}
 
 
-footer .viewbox {
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-footer .viewbox > h5 {
+
+footer .viewbox h5 {
     border: 1px solid #000;
     transition: .3s;
+    margin: 0 auto;
 }
-footer .viewbox > h5:hover {background-color: #000; color: #fff;}
+footer .viewbox h5:hover {background-color: #000; color: #fff;}
 
 /* image */
 .mobile img {
