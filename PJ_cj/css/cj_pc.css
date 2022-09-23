@@ -715,4 +715,16 @@ header nav select option {
   width: 6rem;
 }
 
+footer a.next {
+  display: block;
+  width: 300px;
+  height: 80px;
+  line-height: 80px;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  margin: 80px auto;
+}
+
 /*# sourceMappingURL=cj_pc.css.map */
