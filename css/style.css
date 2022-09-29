@@ -326,11 +326,11 @@ nav.color4 {background-color: #91A38A;}
     width: 25vw;
     height: 13.229vw;
 }
-.slide1 .box1 .img1 {background-image: url(../images/parcono_pc.svg);} 
-.slide1 .box2 .img1 {background-image: url(../images/millac_pc.svg);} 
-.slide1 .box3 .img1 {background-image: url(../images/estee_pc.svg);} 
-.slide2 .box1 .img1 {background-image: url(../images/cheil_pc.svg);} 
-.slide2 .box2 .img1 {background-image: url(../images/lahan.jpg);} 
+.slide1 .box1 .img1 {background-image: url(../images/estee_pc.svg);} 
+.slide1 .box2 .img1 {background-image: url(../images/cheil_pc.svg);} 
+.slide1 .box3 .img1 {background-image: url(../images/lahan.jpg);} 
+.slide2 .box1 .img1 {background-image: url(../images/parcono_pc.svg);} 
+.slide2 .box2 .img1 {background-image: url(../images/millac_pc.svg);} 
 
 
 #work2 .submenu {
@@ -451,6 +451,9 @@ nav.color4 {background-color: #91A38A;}
 .contact .box_wrap3 p:first-child {
     margin-bottom: 3%;
     position: relative;
+}
+.contact .box_wrap2 .box3 p:nth-child(2):hover {
+    text-decoration: underline;
 }
 .fp-watermark {
     display: none;
